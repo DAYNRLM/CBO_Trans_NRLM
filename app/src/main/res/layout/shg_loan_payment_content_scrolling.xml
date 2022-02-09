@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/dimen_30"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.Activities.PaymentActivity"
+    tools:showIn="@layout/activity_shg_loans_payment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/shg_payment_typeMBS"
+                style="@style/CustomSpinner"
+                android:hint="@string/shg_payment_type"
+                android:textColorHint="@color/colourBtnBlueBackground" />
+
+            <Spinner
+                android:id="@+id/shg_payment_sub_MBS"
+                style="@style/CustomSpinner"
+                android:focusable="false"
+                android:hint="@string/shg_payment_sub_type"
+                android:textColorHint="@color/colourBtnBlueBackground"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/payment_agency_typeMBS"
+                style="@style/CustomSpinner"
+                android:focusable="false"
+                android:hint="@string/payment_agency_type"
+                android:textColorHint="@color/colourBtnBlueBackground"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/shg_loan_payment_child_content_scrolling" />
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space3dp"
+            android:orientation="vertical">
+            <!--<include layout="@layout/location_spinner_layout"/>-->
+           <com.google.android.material.textfield.TextInputLayout
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:layout_marginTop="2dp"
+               android:layout_marginRight="5dp"
+               android:layout_marginBottom="2dp"
+               android:hint="Select Gram panchayat">
+
+               <AutoCompleteTextView
+                   android:id="@+id/gpSpineer"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="none" />
+
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:layout_marginTop="2dp"
+               android:layout_marginRight="5dp"
+               android:layout_marginBottom="2dp"
+               android:hint="Select Village">
+
+               <AutoCompleteTextView
+                   android:id="@+id/villageSpinner"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="none" />
+
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/recyclerviewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/common_recyclerview"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

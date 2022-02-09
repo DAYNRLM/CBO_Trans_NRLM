@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space3dp"
+        android:orientation="vertical">
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/savingSpinner"
+            style="@style/CustomSpinner"
+            android:hint="Saving For Member"
+            app:met_floatingLabel="normal" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/amountInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space10dp"
+            android:layout_marginLeft="@dimen/space10dp"
+            app:errorEnabled="true"
+            android:hint="Amount">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/amountEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="4"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/textBlack" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/roiInputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space10dp"
+            android:layout_marginLeft="@dimen/space10dp"
+            app:errorEnabled="true"
+            android:hint="ROI(%)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/roiEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="2"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/textBlack" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/space10dp"
+            android:layout_marginLeft="@dimen/space10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dialogCancelBtn"
+                style="@style/TextButtonButton"
+                android:layout_width="wrap_content"
+                android:text="Cancel"
+                android:textStyle="bold"
+                android:textColor="@color/button_background_red" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dialogAddBtn"
+                style="@style/TextButtonButton"
+                android:layout_width="wrap_content"
+                android:text="Add"
+                android:textStyle="bold"
+                android:textColor="@color/colourTitleBlueBackground" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TitleTextViewTheme"
+                android:background="@color/colourTitleBlueBackground"
+                android:text="Select Location" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/gpSpineer"
+                style="@style/CustomSpinner"
+                android:hint="@string/select_grampanchayat"
+                app:met_floatingLabel="normal"/>
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/villageSpinner"
+                style="@style/CustomSpinner"
+                android:hint="@string/select_villages"
+                app:met_floatingLabel="normal"/>
+        </LinearLayout>
+
+</LinearLayout>

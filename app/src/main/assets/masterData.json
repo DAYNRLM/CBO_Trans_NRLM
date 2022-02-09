@@ -1,0 +1,982 @@
+{
+
+  "block_assign": [{
+    "block_name": "MAHAM",
+    "block_code": "1208005",
+    "gp_assign": [{
+      "gp_code": "1208005032",
+      "village_assign": [{
+        "village_code": "1208005032001",
+        "shg_details": [{
+          "shg_code": "24639",
+          "shg_members": [{
+            "shg_member_code": "266535",
+            "shg_member_name": "SARITA"
+          }, {
+            "shg_member_code": "266541",
+            "shg_member_name": "SUNITA"
+          }, {
+            "shg_member_code": "266548",
+            "shg_member_name": "RUKMANI"
+          }, {
+            "shg_member_code": "266582",
+            "shg_member_name": "RAJO"
+          }, {
+            "shg_member_code": "266583",
+            "shg_member_name": "RAJ BALA"
+          }, {
+            "shg_member_code": "266565",
+            "shg_member_name": "SUNITA"
+          }, {
+            "shg_member_code": "266568",
+            "shg_member_name": "SUNITA"
+          }, {
+            "shg_member_code": "266572",
+            "shg_member_name": "JARNA BHIL"
+          }, {
+            "shg_member_code": "266575",
+            "shg_member_name": "SEEMA DEVI"
+          }, {
+            "shg_member_code": "266578",
+            "shg_member_name": "SANTOSH"
+          }, {
+            "shg_member_code": "266579",
+            "shg_member_name": "SUNITA"
+          }, {
+            "shg_member_code": "266584",
+            "shg_member_name": "SUMAN"
+          }],
+
+          "shg_name": "LAXMI BAI"
+
+
+        }, {
+          "shg_code": "39327",
+          "shg_members": [{
+            "shg_member_code": "436033",
+            "shg_member_name": "SURAJ MUKHI"
+          }, {
+            "shg_member_code": "436035",
+            "shg_member_name": "PINKI DEVI"
+          }, {
+            "shg_member_code": "436037",
+            "shg_member_name": "RENU"
+          }, {
+            "shg_member_code": "436038",
+            "shg_member_name": "HASNA"
+          }, {
+            "shg_member_code": "436040",
+            "shg_member_name": "MUNNI"
+          }, {
+            "shg_member_code": "436042",
+            "shg_member_name": "MUNNI"
+          }, {
+            "shg_member_code": "436044",
+            "shg_member_name": "KALAWATI"
+          }, {
+            "shg_member_code": "436047",
+            "shg_member_name": "NIRMLA"
+          }, {
+            "shg_member_code": "436049",
+            "shg_member_name": "SUMAN"
+          }, {
+            "shg_member_code": "436050",
+            "shg_member_name": "SUNIL"
+          }],
+
+          "shg_name": "MAA DURGA SHG"
+
+        }, {
+          "shg_code": "17474",
+          "shg_members": [{
+            "shg_member_code": "401992",
+            "shg_member_name": "MEENA"
+          }, {
+            "shg_member_code": "401997",
+            "shg_member_name": "PINKI"
+          }, {
+            "shg_member_code": "402003",
+            "shg_member_name": "SAVITA"
+          }, {
+            "shg_member_code": "402008",
+            "shg_member_name": "RAJWANTI"
+          }, {
+            "shg_member_code": "402011",
+            "shg_member_name": "JAGWANTI"
+          }, {
+            "shg_member_code": "402018",
+            "shg_member_name": "SANTRA"
+          }, {
+            "shg_member_code": "402023",
+            "shg_member_name": "BABLI"
+          }, {
+            "shg_member_code": "402028",
+            "shg_member_name": "NITA"
+          }, {
+            "shg_member_code": "402030",
+            "shg_member_name": "RAJBALA"
+          }, {
+            "shg_member_code": "402035",
+            "shg_member_name": "SARASWATI"
+          }, {
+            "shg_member_code": "402043",
+            "shg_member_name": "SUMAN"
+          }],
+          "shg_name": "NAM SWERA"
+
+
+        }, {
+          "shg_code": "17482",
+          "shg_members": [{
+            "shg_member_code": "401843",
+            "shg_member_name": "SHEELA"
+          }, {
+            "shg_member_code": "401854",
+            "shg_member_name": "BEENA"
+          }, {
+            "shg_member_code": "401834",
+            "shg_member_name": "SUMAN"
+          }, {
+            "shg_member_code": "401866",
+            "shg_member_name": "PREETI"
+          }, {
+            "shg_member_code": "401877",
+            "shg_member_name": "KOSHALYA"
+          }, {
+            "shg_member_code": "401886",
+            "shg_member_name": "JYOTI"
+          }, {
+            "shg_member_code": "401891",
+            "shg_member_name": "ANJU"
+          }, {
+            "shg_member_code": "401923",
+            "shg_member_name": "SAVITA"
+          }, {
+            "shg_member_code": "401951",
+            "shg_member_name": "ANITA"
+          }, {
+            "shg_member_code": "401961",
+            "shg_member_name": "NISHA"
+          }, {
+            "shg_member_code": "401934",
+            "shg_member_name": "NIRMALA"
+          }],
+          "shg_name": "KHUSI"
+
+
+        }, {
+          "shg_code": "17484",
+          "shg_members": [{
+            "shg_member_code": "356551",
+            "shg_member_name": "BIRMATI"
+          }, {
+            "shg_member_code": "356545",
+            "shg_member_name": "RITTU"
+          }, {
+            "shg_member_code": "356547",
+            "shg_member_name": "ANITA DEVI"
+          }, {
+            "shg_member_code": "356549",
+            "shg_member_name": "RAJESH"
+          }, {
+            "shg_member_code": "356553",
+            "shg_member_name": "ANITA"
+          }, {
+            "shg_member_code": "356555",
+            "shg_member_name": "SUMAN DEVI"
+          }, {
+            "shg_member_code": "356558",
+            "shg_member_name": "URMILA DEVI"
+          }, {
+            "shg_member_code": "356559",
+            "shg_member_name": "SAROJ"
+          }, {
+            "shg_member_code": "356565",
+            "shg_member_name": "RAMRATI"
+          }, {
+            "shg_member_code": "356561",
+            "shg_member_name": "ANITA"
+          }, {
+            "shg_member_code": "356564",
+            "shg_member_name": "KITABO"
+          }],
+
+          "shg_name": "NAI UMANG"
+
+
+        }, {
+          "shg_code": "24640",
+          "shg_members": [{
+            "shg_member_code": "267390",
+            "shg_member_name": "KAUSHALYA"
+          }, {
+            "shg_member_code": "267336",
+            "shg_member_name": "MUNNI"
+          }, {
+            "shg_member_code": "267339",
+            "shg_member_name": "PUSHPA"
+          }, {
+            "shg_member_code": "267362",
+            "shg_member_name": "SOMAVATI"
+          }, {
+            "shg_member_code": "267386",
+            "shg_member_name": "SAMI"
+          }, {
+            "shg_member_code": "267383",
+            "shg_member_name": "BHATERI"
+          }, {
+            "shg_member_code": "267384",
+            "shg_member_name": "SUMITRA"
+          }, {
+            "shg_member_code": "267382",
+            "shg_member_name": "SHAINA"
+          }, {
+            "shg_member_code": "267385",
+            "shg_member_name": "PALI"
+          }, {
+            "shg_member_code": "267387",
+            "shg_member_name": "GEETA"
+          }],
+
+          "shg_name": "JIWAN JYOTI"
+
+
+        }, {
+          "shg_code": "17475",
+          "shg_members": [{
+            "shg_member_code": "356598",
+            "shg_member_name": "PARVESH KUMARI"
+          }, {
+            "shg_member_code": "356584",
+            "shg_member_name": "SANJU"
+          }, {
+            "shg_member_code": "356569",
+            "shg_member_name": "POONAM"
+          }, {
+            "shg_member_code": "356609",
+            "shg_member_name": "JAGMATI"
+          }, {
+            "shg_member_code": "356605",
+            "shg_member_name": "JAGMATI"
+          }, {
+            "shg_member_code": "356602",
+            "shg_member_name": "KAMLESH"
+          }, {
+            "shg_member_code": "356611",
+            "shg_member_name": "BALA"
+          }, {
+            "shg_member_code": "356610",
+            "shg_member_name": "BHATERI"
+          }, {
+            "shg_member_code": "356603",
+            "shg_member_name": "KAVITA"
+          }, {
+            "shg_member_code": "356607",
+            "shg_member_name": "NAMITA"
+          }],
+
+          "shg_name": "NAI MUSKAN"
+
+
+        }, {
+          "shg_code": "17473",
+          "shg_members": [{
+            "shg_member_code": "266622",
+            "shg_member_name": "MEENA"
+          }, {
+            "shg_member_code": "266627",
+            "shg_member_name": "KITABO"
+          }, {
+            "shg_member_code": "187106",
+            "shg_member_name": "BIMLA"
+          }, {
+            "shg_member_code": "187152",
+            "shg_member_name": "SANGEETA"
+          }, {
+            "shg_member_code": "187153",
+            "shg_member_name": "SONI"
+          }, {
+            "shg_member_code": "266608",
+            "shg_member_name": "SANTOSH"
+          }, {
+            "shg_member_code": "266606",
+            "shg_member_name": "SUMITRA"
+          }, {
+            "shg_member_code": "266615",
+            "shg_member_name": "SUMITRA"
+          }, {
+            "shg_member_code": "266633",
+            "shg_member_name": "MEENA"
+          }, {
+            "shg_member_code": "266605",
+            "shg_member_name": "SUNITA"
+          }],
+
+          "shg_name": "SARASWATI"
+
+
+        }, {
+          "shg_code": "17476",
+          "shg_members": [{
+            "shg_member_code": "240986",
+            "shg_member_name": "BHAN DEVI"
+          }, {
+            "shg_member_code": "187271",
+            "shg_member_name": "MANJEET"
+          }, {
+            "shg_member_code": "187273",
+            "shg_member_name": "POOJA"
+          }, {
+            "shg_member_code": "187278",
+            "shg_member_name": "SARITA DEVI"
+          }, {
+            "shg_member_code": "187281",
+            "shg_member_name": "SHARMILA"
+          }, {
+            "shg_member_code": "240829",
+            "shg_member_name": "REKHA"
+          }, {
+            "shg_member_code": "240833",
+            "shg_member_name": "SHARDA"
+          }, {
+            "shg_member_code": "240842",
+            "shg_member_name": "SUNITA"
+          }, {
+            "shg_member_code": "240850",
+            "shg_member_name": "OMLI"
+          }, {
+            "shg_member_code": "266900",
+            "shg_member_name": "BHATERI"
+          }],
+
+          "shg_name": "SARTHI"
+
+
+        }, {
+          "shg_code": "17478",
+          "shg_members": [{
+            "shg_member_code": "187294",
+            "shg_member_name": "NIRMAL"
+          }, {
+            "shg_member_code": "240708",
+            "shg_member_name": "DARSHANA"
+          }, {
+            "shg_member_code": "240715",
+            "shg_member_name": "DARSHANA"
+          }, {
+            "shg_member_code": "240705",
+            "shg_member_name": "BABITA"
+          }, {
+            "shg_member_code": "187295",
+            "shg_member_name": "SHAKUNTLA"
+          }, {
+            "shg_member_code": "187296",
+            "shg_member_name": "BHAGWANTI"
+          }, {
+            "shg_member_code": "187300",
+            "shg_member_name": "BIMLA"
+          }, {
+            "shg_member_code": "187302",
+            "shg_member_name": "SHAKUNTLA"
+          }, {
+            "shg_member_code": "187304",
+            "shg_member_name": "PINKY"
+          }, {
+            "shg_member_code": "187308",
+            "shg_member_name": "SAVITA"
+          }, {
+            "shg_member_code": "187299",
+            "shg_member_name": "URMILA"
+          }, {
+            "shg_member_code": "187305",
+            "shg_member_name": "SHILA"
+          }, {
+            "shg_member_code": "187306",
+            "shg_member_name": "CHAND KAUR"
+          }],
+
+          "shg_name": "NAYA SAWERA"
+
+
+        }, {
+          "shg_code": "17481",
+          "shg_members": [{
+            "shg_member_code": "187349",
+            "shg_member_name": "MALLO"
+          }, {
+            "shg_member_code": "187346",
+            "shg_member_name": "NANHI"
+          }, {
+            "shg_member_code": "187344",
+            "shg_member_name": "SUMAN KASHYAP"
+          }, {
+            "shg_member_code": "187351",
+            "shg_member_name": "SAROJ"
+          }, {
+            "shg_member_code": "187352",
+            "shg_member_name": "NEELAM"
+          }, {
+            "shg_member_code": "187353",
+            "shg_member_name": "MAYA"
+          }, {
+            "shg_member_code": "187356",
+            "shg_member_name": "LAXMI"
+          }, {
+            "shg_member_code": "187358",
+            "shg_member_name": "NEELAM"
+          }, {
+            "shg_member_code": "240716",
+            "shg_member_name": "SUDESH"
+          }, {
+            "shg_member_code": "240717",
+            "shg_member_name": "SUMAN"
+          }],
+          "shg_name": "SHIV SHANKAR"
+
+        }, {
+          "shg_code": "35776",
+          "shg_members": [{
+            "shg_member_code": "395609",
+            "shg_member_name": "ANITA"
+          }, {
+            "shg_member_code": "395616",
+            "shg_member_name": "ANIL"
+          }, {
+            "shg_member_code": "395622",
+            "shg_member_name": "KIRAN"
+          }, {
+            "shg_member_code": "395712",
+            "shg_member_name": "PINKI"
+          }, {
+            "shg_member_code": "395670",
+            "shg_member_name": "BABLI"
+          }, {
+            "shg_member_code": "395691",
+            "shg_member_name": "MONIKA"
+          }, {
+            "shg_member_code": "395700",
+            "shg_member_name": "SUNITA"
+          }, {
+            "shg_member_code": "395721",
+            "shg_member_name": "SHAKUNTLA"
+          }, {
+            "shg_member_code": "395747",
+            "shg_member_name": "USHA DEVI"
+          }, {
+            "shg_member_code": "395753",
+            "shg_member_name": "BALA DEVI"
+          }, {
+            "shg_member_code": "395791",
+            "shg_member_name": "SAROJ"
+          }, {
+            "shg_member_code": "395799",
+            "shg_member_name": "ANITA"
+          }],
+          "shg_name": "JAI MAA LAXMI"
+
+        }, {
+          "shg_code": "17480",
+          "shg_members": [{
+            "shg_member_code": "187322",
+            "shg_member_name": "BIMLA"
+          }, {
+            "shg_member_code": "187324",
+            "shg_member_name": "PINKI"
+          }, {
+            "shg_member_code": "187323",
+            "shg_member_name": "SANTOSH"
+          }, {
+            "shg_member_code": "187332",
+            "shg_member_name": "MANJU"
+          }, {
+            "shg_member_code": "187327",
+            "shg_member_name": "CHANDERPATI"
+          }, {
+            "shg_member_code": "187333",
+            "shg_member_name": "MUKESH"
+          }, {
+            "shg_member_code": "187326",
+            "shg_member_name": "SUMITRA"
+          }, {
+            "shg_member_code": "187328",
+            "shg_member_name": "BINA"
+          }, {
+            "shg_member_code": "187329",
+            "shg_member_name": "ROSHANI"
+          }, {
+            "shg_member_code": "187331",
+            "shg_member_name": "MURTI"
+          }],
+          "shg_name": "RADHA KRISHANA"
+
+        }, {
+          "shg_code": "17485",
+          "shg_members": [{
+            "shg_member_code": "266455",
+            "shg_member_name": "SHEELA"
+          }, {
+            "shg_member_code": "266468",
+            "shg_member_name": "RAJWANTI"
+          }, {
+            "shg_member_code": "266475",
+            "shg_member_name": "KAVITA"
+          }, {
+            "shg_member_code": "187849",
+            "shg_member_name": "LALITA"
+          }, {
+            "shg_member_code": "187835",
+            "shg_member_name": "SUDESH"
+          }, {
+            "shg_member_code": "187850",
+            "shg_member_name": "DARSHNA"
+          }, {
+            "shg_member_code": "187852",
+            "shg_member_name": "NISHA RANI"
+          }, {
+            "shg_member_code": "266461",
+            "shg_member_name": "KRISHANA"
+          }, {
+            "shg_member_code": "187854",
+            "shg_member_name": "RITU"
+          }, {
+            "shg_member_code": "266479",
+            "shg_member_name": "SUSHMA"
+          }],
+          "shg_name": "NAI KIRAN"
+
+        }, {
+          "shg_code": "17486",
+          "shg_members": [{
+            "shg_member_code": "240733",
+            "shg_member_name": "DARSHANA"
+          }, {
+            "shg_member_code": "187871",
+            "shg_member_name": "GAYTRI"
+          }, {
+            "shg_member_code": "187861",
+            "shg_member_name": "NIRMLA"
+          }, {
+            "shg_member_code": "187862",
+            "shg_member_name": "SAKNDA"
+          }, {
+            "shg_member_code": "187860",
+            "shg_member_name": "SUMAN"
+          }, {
+            "shg_member_code": "187869",
+            "shg_member_name": "MUKESH"
+          }, {
+            "shg_member_code": "187873",
+            "shg_member_name": "RAJPATI"
+          }, {
+            "shg_member_code": "187863",
+            "shg_member_name": "RAJBALA"
+          }, {
+            "shg_member_code": "187864",
+            "shg_member_name": "GEETA"
+          }, {
+            "shg_member_code": "187865",
+            "shg_member_name": "BALI"
+          }, {
+            "shg_member_code": "187867",
+            "shg_member_name": "BEDI"
+          }],
+          "shg_name": "UMEED"
+
+        }, {
+          "shg_code": "17483",
+          "shg_members": [{
+            "shg_member_code": "240805",
+            "shg_member_name": "ASHA"
+          }, {
+            "shg_member_code": "187450",
+            "shg_member_name": "BABITA"
+          }, {
+            "shg_member_code": "187452",
+            "shg_member_name": "SANTOSH"
+          }, {
+            "shg_member_code": "187454",
+            "shg_member_name": "SUMAN"
+          }, {
+            "shg_member_code": "187506",
+            "shg_member_name": "SHINU"
+          }, {
+            "shg_member_code": "187518",
+            "shg_member_name": "ROSHANI"
+          }, {
+            "shg_member_code": "187505",
+            "shg_member_name": "SHEELA"
+          }, {
+            "shg_member_code": "187509",
+            "shg_member_name": "SUMITRA"
+          }, {
+            "shg_member_code": "187511",
+            "shg_member_name": "PRIYANKA"
+          }, {
+            "shg_member_code": "187512",
+            "shg_member_name": "MANJU"
+          }, {
+            "shg_member_code": "187514",
+            "shg_member_name": "SUMAN"
+          }, {
+            "shg_member_code": "187516",
+            "shg_member_name": "ROSHANI"
+          }],
+          "shg_name": "JAI MATA DI"
+
+        }],
+        "village_name": "BAHLBA"
+      }],
+      "gp_name": "BAHALBA PANA PANRI BAHLBA"
+    }, {
+      "gp_code": "1208005030",
+      "village_assign": [{
+        "village_code": "1208005030001",
+        "shg_details": [{
+          "status": "Shgs not Available in this village !!!"
+        }],
+        "village_name": "BAHALBA"
+      }],
+      "gp_name": "BAHALBA"
+    }, {
+      "gp_code": "1208005001",
+      "village_assign": [{
+        "village_code": "1208005001001",
+        "shg_details": [{
+          "shg_code": "25292",
+          "shg_members": [{
+            "shg_member_code": "276140",
+            "shg_member_name": "SUDESH"
+          }, {
+            "shg_member_code": "276141",
+            "shg_member_name": "GUDDI"
+          }, {
+            "shg_member_code": "276142",
+            "shg_member_name": "KIRAN "
+          }, {
+            "shg_member_code": "276143",
+            "shg_member_name": "JYOTI"
+          }, {
+            "shg_member_code": "276144",
+            "shg_member_name": "MUKESH"
+          }, {
+            "shg_member_code": "276145",
+            "shg_member_name": "BABLI"
+          }, {
+            "shg_member_code": "276146",
+            "shg_member_name": "RAVINA"
+          }, {
+            "shg_member_code": "276147",
+            "shg_member_name": "ANITA"
+          }, {
+            "shg_member_code": "276148",
+            "shg_member_name": "SUNITA"
+          }, {
+            "shg_member_code": "276149",
+            "shg_member_name": "NIRMALA"
+          }, {
+            "shg_member_code": "276150",
+            "shg_member_name": "RADHA"
+          }],
+          "shg_name": "LUXMI"
+
+        }, {
+          "shg_code": "25284",
+          "shg_members": [{
+            "shg_member_code": "276030",
+            "shg_member_name": "INDU BALA"
+          }, {
+            "shg_member_code": "276031",
+            "shg_member_name": "SEEMA"
+          }, {
+            "shg_member_code": "276034",
+            "shg_member_name": "KAVITA"
+          }, {
+            "shg_member_code": "276035",
+            "shg_member_name": "PINKI"
+          }, {
+            "shg_member_code": "276036",
+            "shg_member_name": "SUMAN BALA"
+          }, {
+            "shg_member_code": "276038",
+            "shg_member_name": "MUNNI"
+          }, {
+            "shg_member_code": "276040",
+            "shg_member_name": "POONAM"
+          }, {
+            "shg_member_code": "276041",
+            "shg_member_name": "GEETA"
+          }, {
+            "shg_member_code": "276042",
+            "shg_member_name": "POONAM"
+          }, {
+            "shg_member_code": "276043",
+            "shg_member_name": "VED MATI"
+          }, {
+            "shg_member_code": "276044",
+            "shg_member_name": "INDRAWATI"
+          }],
+          "shg_name": "UMEED"
+
+        }],
+        "village_name": "AJAIB"
+      }],
+      "gp_name": "AJAIB"
+    }, {
+      "gp_code": "1208005031",
+      "village_assign": [{
+        "village_code": "1208005031001",
+        "shg_details": [{
+          "shg_code": "25289",
+          "shg_members": [{
+            "shg_member_code": "276108",
+            "shg_member_name": "APLA RANI"
+          }, {
+            "shg_member_code": "276109",
+            "shg_member_name": "SUSHMA"
+          }, {
+            "shg_member_code": "276110",
+            "shg_member_name": "KAMLESH"
+          }, {
+            "shg_member_code": "276111",
+            "shg_member_name": "KALAWATI"
+          }, {
+            "shg_member_code": "276112",
+            "shg_member_name": "SAROJ"
+          }, {
+            "shg_member_code": "276113",
+            "shg_member_name": "SHAKUNTLA"
+          }, {
+            "shg_member_code": "276114",
+            "shg_member_name": "JYOTI"
+          }, {
+            "shg_member_code": "276115",
+            "shg_member_name": "JONI"
+          }, {
+            "shg_member_code": "276116",
+            "shg_member_name": "SEEMA"
+          }, {
+            "shg_member_code": "276117",
+            "shg_member_name": "KAMLESH"
+          }],
+          "shg_name": "SHRI RAM"
+
+
+        }, {
+          "shg_code": "25293",
+          "shg_members": [{
+            "shg_member_code": "276151",
+            "shg_member_name": "GUDDI DEVI"
+          }, {
+            "shg_member_code": "276152",
+            "shg_member_name": "SARLA"
+          }, {
+            "shg_member_code": "276153",
+            "shg_member_name": "POOJA"
+          }, {
+            "shg_member_code": "276154",
+            "shg_member_name": "TINKU"
+          }, {
+            "shg_member_code": "276155",
+            "shg_member_name": "SUSHILA"
+          }, {
+            "shg_member_code": "276156",
+            "shg_member_name": "RAJPATI"
+          }, {
+            "shg_member_code": "276157",
+            "shg_member_name": "KAMLESH"
+          }, {
+            "shg_member_code": "276158",
+            "shg_member_name": "MEENU"
+          }, {
+            "shg_member_code": "276159",
+            "shg_member_name": "SUMITRA"
+          }, {
+            "shg_member_code": "276160",
+            "shg_member_name": "SUMITRA "
+          }],
+          "shg_name": "JAI MAA LUXMI"
+
+        }, {
+          "shg_code": "25288",
+          "shg_members": [{
+            "shg_member_code": "276095",
+            "shg_member_name": "POOJA DEVI"
+          }, {
+            "shg_member_code": "276096",
+            "shg_member_name": "MANJU"
+          }, {
+            "shg_member_code": "276097",
+            "shg_member_name": "SITA"
+          }, {
+            "shg_member_code": "276100",
+            "shg_member_name": "NEELAM"
+          }, {
+            "shg_member_code": "276101",
+            "shg_member_name": "REKHA"
+          }, {
+            "shg_member_code": "276103",
+            "shg_member_name": "BABITA"
+          }, {
+            "shg_member_code": "276106",
+            "shg_member_name": "MAMATA"
+          }, {
+            "shg_member_code": "276107",
+            "shg_member_name": "PINKI"
+          }, {
+            "shg_member_code": "276098",
+            "shg_member_name": "SEWA"
+          }, {
+            "shg_member_code": "276099",
+            "shg_member_name": "MONIKA"
+          }, {
+            "shg_member_code": "276102",
+            "shg_member_name": "MUKESH"
+          }, {
+            "shg_member_code": "276104",
+            "shg_member_name": "SWATI DEVI"
+          }, {
+            "shg_member_code": "276105",
+            "shg_member_name": "KAVITA"
+          }],
+          "shg_name": "RADHA KRISHANA"
+
+        }, {
+          "shg_code": "25290",
+          "shg_members": [{
+            "shg_member_code": "276128",
+            "shg_member_name": "LUXMI"
+          }, {
+            "shg_member_code": "276119",
+            "shg_member_name": "SONU"
+          }, {
+            "shg_member_code": "276118",
+            "shg_member_name": "SAROJ"
+          }, {
+            "shg_member_code": "276120",
+            "shg_member_name": "NEELAM"
+          }, {
+            "shg_member_code": "276125",
+            "shg_member_name": "RENU"
+          }, {
+            "shg_member_code": "276126",
+            "shg_member_name": "KAVITA"
+          }, {
+            "shg_member_code": "276127",
+            "shg_member_name": "SUMAN"
+          }, {
+            "shg_member_code": "276123",
+            "shg_member_name": "BEERMATI"
+          }, {
+            "shg_member_code": "276121",
+            "shg_member_name": "KIRAN"
+          }, {
+            "shg_member_code": "276122",
+            "shg_member_name": "MUSKAN"
+          }, {
+            "shg_member_code": "276124",
+            "shg_member_name": "BABALI"
+          }],
+          "shg_name": "JIWAN JYOTI"
+
+        }, {
+          "shg_code": "25291",
+          "shg_members": [{
+            "shg_member_code": "276129",
+            "shg_member_name": "MEENA"
+          }, {
+            "shg_member_code": "276130",
+            "shg_member_name": "SUDESH"
+          }, {
+            "shg_member_code": "276131",
+            "shg_member_name": "SHIMLA"
+          }, {
+            "shg_member_code": "276135",
+            "shg_member_name": "SHILA"
+          }, {
+            "shg_member_code": "276136",
+            "shg_member_name": "KAMALESH"
+          }, {
+            "shg_member_code": "276137",
+            "shg_member_name": "NEELAM"
+          }, {
+            "shg_member_code": "276138",
+            "shg_member_name": "CHANDER MUKHI"
+          }, {
+            "shg_member_code": "276139",
+            "shg_member_name": "NEELAM"
+          }, {
+            "shg_member_code": "276132",
+            "shg_member_name": "SUNITA"
+          }, {
+            "shg_member_code": "276133",
+            "shg_member_name": "SUDESH"
+          }, {
+            "shg_member_code": "276134",
+            "shg_member_name": "KAVITA DEVI"
+          }],
+          "shg_name": "SARTHI"
+
+        }, {
+          "shg_code": "25287",
+          "shg_members": [{
+            "shg_member_code": "276083",
+            "shg_member_name": "PREM"
+          }, {
+            "shg_member_code": "276084",
+            "shg_member_name": "ANITA"
+          }, {
+            "shg_member_code": "276082",
+            "shg_member_name": "SUMAN LATA"
+          }, {
+            "shg_member_code": "276086",
+            "shg_member_name": "BABITA"
+          }, {
+            "shg_member_code": "276085",
+            "shg_member_name": "BHAGWANTI"
+          }, {
+            "shg_member_code": "276087",
+            "shg_member_name": "REKHA"
+          }, {
+            "shg_member_code": "276088",
+            "shg_member_name": "ROSHNI"
+          }, {
+            "shg_member_code": "276089",
+            "shg_member_name": "PUNAM"
+          }, {
+            "shg_member_code": "276091",
+            "shg_member_name": "REMAN"
+          }, {
+            "shg_member_code": "276092",
+            "shg_member_name": "SAROJ"
+          }, {
+            "shg_member_code": "276094",
+            "shg_member_name": "POOJA"
+          }, {
+            "shg_member_code": "276090",
+            "shg_member_name": "RAJPATI"
+          }, {
+            "shg_member_code": "276093",
+            "shg_member_name": "GUDDI"
+          }],
+          "shg_name": "ASHA"
+
+        }],
+        "village_name": "AJAIBKHAS"
+      }],
+      "gp_name": "AJAIB PANA KHAS"
+    }]
+  }],
+  "savings_type": [{
+    "saving_type_name": "Compulsory Saving",
+    "typ_id": "1"
+  }, {
+    "saving_type_name": "Food Security Saving",
+    "typ_id": "2"
+  }, {
+    "saving_type_name": "Health Saving",
+    "typ_id": "3"
+  }, {
+    "saving_type_name": "Optional Saving",
+    "typ_id": "4"
+  }]
+}

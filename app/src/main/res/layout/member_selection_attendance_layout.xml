@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/selectall_RL"
+    android:layout_marginRight="@dimen/dimen_15"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/count"
+        android:text="Count"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/text_size_20SP"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+    >
+    <TextView
+        android:id="@+id/select_allTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select all"
+        android:textSize="@dimen/text_size_20SP"
+        />
+    <CheckBox
+        android:id="@+id/select_all_CB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/select_allTv"
+        />
+    </RelativeLayout>
+</LinearLayout>
+
+

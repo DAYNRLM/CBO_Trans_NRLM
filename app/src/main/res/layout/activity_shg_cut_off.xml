@@ -1,0 +1,1595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.Activities.ShgCutOffActivity">
+
+    <FrameLayout
+        android:id="@+id/cutoffFramLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/botemBtnLayout"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/botemBtnLayout"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space3dp"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardElevation="7dp"
+                card_view:strokeColor="@color/colourTitleBlueBackground"
+                card_view:strokeWidth="1.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space3dp">
+
+                        <TextView
+                            android:id="@+id/test"
+                            style="@style/TitleTextViewTheme"
+                            android:layout_margin="@dimen/space3dp"
+                            android:background="@color/colourTitleBlueBackground"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="left"
+                            android:padding="@dimen/space2dp"
+                            android:text="SHG CUT-OFF"
+                            android:textSize="@dimen/dimen_15" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/shgName_Tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="110dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/shrine_red"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/space2dp"
+                            android:text="SHG Information"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_14SP"
+                            android:textStyle="normal">
+
+                        </com.google.android.material.textview.MaterialTextView>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/meetingInputLayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="Meetings Conducted Till Date"
+                            android:padding="@dimen/space2dp"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/meetingConductedEt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/space5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:layout_weight="1"
+                                android:hint="Last Meeting Date"
+                                android:padding="@dimen/space2dp"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/lastMeetingDateET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:lines="1"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/colourTitleBlueBackground"
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:id="@+id/shgCutoffDateTTL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:layout_weight="1"
+                                android:hint="SHG CutOff Date"
+                                android:padding="@dimen/space2dp"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/shgCutoffDateEt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:lines="1"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/colourTitleBlueBackground"
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fundAvlCardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space3dp"
+                android:layout_marginTop="@dimen/space5dp"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardElevation="7dp"
+                card_view:strokeColor="@color/colourTitleBlueBackground"
+                card_view:strokeWidth="1.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        style="@style/TitleTextViewTheme"
+                        android:layout_margin="@dimen/space3dp"
+                        android:background="@color/colourTitleBlueBackground"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/space2dp"
+                        android:text="Fund Available With SHG"
+                        android:textSize="@dimen/dimen_15" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/cashInHandTTL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Cash in Hand"
+                            android:padding="@dimen/space2dp"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/cashInHandET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:text="0"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/cashInBankTTL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Cash in Bank"
+                            android:padding="@dimen/space2dp"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/cashInBankET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:text="0"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space5dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="Fixed Deposit/Investment"
+                        android:textColorHint="@color/colourEdittextHint">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/fdSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:inputType="none"
+                            android:textColor="@color/color_000"
+                            android:textColorHint="@color/colourTitleBlueBackground"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fdCardview"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space3dp"
+                android:layout_marginTop="@dimen/space5dp"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardElevation="7dp"
+                card_view:strokeColor="@color/colourTitleBlueBackground"
+                card_view:strokeWidth="1.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        style="@style/TitleTextViewTheme"
+                        android:layout_margin="@dimen/space3dp"
+                        android:background="@color/colourTitleBlueBackground"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/space2dp"
+                        android:text="FIXED DEPOSIT / INVESTMENT"
+                        android:textSize="@dimen/dimen_15" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/bankCompnyTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Bank / Company"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/bankCompanySpinner"
+                                android:cursorVisible="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="none"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/bankNameTIL"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space5dp"
+                        android:layout_marginRight="@dimen/space5dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="Bank Name"
+                        android:textColorHint="@color/colourEdittextHint">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/bankCompanyNameSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:inputType="none"
+                            android:textColor="@color/color_000"
+                            android:textColorHint="@color/colourTitleBlueBackground"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/addCompanyBtn"
+                        style="@style/TextButtonButton"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:backgroundTint="@color/colourTitleBlueBackground"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Add Company"
+                        card_view:cornerRadius="100dp"
+                        android:textColor="@color/colorWhite" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/branchTIL"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space5dp"
+                        android:layout_marginRight="@dimen/space5dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="Bank Branch"
+                        android:textColorHint="@color/colourEdittextHint">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/branchnameSpineer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:inputType="none"
+                            android:textColor="@color/color_000"
+                            android:textColorHint="@color/colourTitleBlueBackground"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/addCompanyBranchBtn"
+                        style="@style/TextButtonButton"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:backgroundTint="@color/colourTitleBlueBackground"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Add Branch"
+                        card_view:cornerRadius="100dp"
+                        android:textColor="@color/colorWhite" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                         <com.google.android.material.textfield.TextInputLayout
+                             android:id="@+id/fdNumberTIL"
+                             android:layout_weight="1"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:padding="@dimen/space2dp"
+                             android:layout_marginLeft="@dimen/space5dp"
+                             android:layout_marginRight="@dimen/space5dp"
+                             android:hint="FD Number"
+                             android:textColorHint="@color/colourEdittextHint"
+                             android:fontFamily="@font/roboto_regular"
+                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                             <com.google.android.material.textfield.TextInputEditText
+                                 android:id="@+id/fdNumberEt"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:lines="1"
+                                 android:maxLength="5"
+                                 android:textColor="@color/color_000"
+                                 android:textColorHint="@color/colourTitleBlueBackground"
+                                 android:textSize="15dp"
+                                 android:fontFamily="@font/roboto_regular"
+                                 android:inputType="number"/>
+
+                         </com.google.android.material.textfield.TextInputLayout>
+
+                         <com.google.android.material.textfield.TextInputLayout
+                             android:id="@+id/fdAmountTIL"
+                             android:layout_weight="1"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:padding="@dimen/space2dp"
+                             android:layout_marginLeft="@dimen/space5dp"
+                             android:layout_marginRight="@dimen/space5dp"
+                             android:hint="FD /Investment Amount"
+                             android:fontFamily="@font/roboto_regular"
+                             android:textColorHint="@color/colourEdittextHint"
+                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                             <com.google.android.material.textfield.TextInputEditText
+                                 android:id="@+id/fdAmountEt"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:lines="1"
+                                 android:maxLength="5"
+                                 android:textColor="@color/color_000"
+                                 android:textColorHint="@color/colourTitleBlueBackground"
+                                 android:textSize="15dp"
+                                 android:fontFamily="@font/roboto_regular"
+                                 android:inputType="number"/>
+
+                         </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space2dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="Maturity Amountr"
+                            android:textColorHint="@color/colourEdittextHint"
+                            android:fontFamily="@font/roboto_regular"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space2dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="Rate Of Interest"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColorHint="@color/colourEdittextHint"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/dimen_5"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space2dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="Date Of Opening"
+                            android:textColorHint="@color/colourEdittextHint"
+                            android:fontFamily="@font/roboto_regular"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space2dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="Date Of Maturity"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColorHint="@color/colourEdittextHint"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/savingShardCardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space3dp"
+                android:layout_marginTop="@dimen/space5dp"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardElevation="7dp"
+                card_view:strokeColor="@color/colourTitleBlueBackground"
+                card_view:strokeWidth="1.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        style="@style/TitleTextViewTheme"
+                        android:layout_margin="@dimen/space3dp"
+                        android:background="@color/colourTitleBlueBackground"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/space2dp"
+                        android:text="Saving / Shared Capital"
+                        android:textSize="@dimen/dimen_15" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/savingVoTTL"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space2dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="Saving with VO"
+                            android:textColorHint="@color/colourEdittextHint"
+                            android:fontFamily="@font/roboto_regular"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/savingVoET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp"
+                                android:text="0"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/savingClfTTL"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space2dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="Saving with CLF"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColorHint="@color/colourEdittextHint"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/savingClfET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp"
+                                android:text="0"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/capitalVoTTL"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space2dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="Share Capital with VO"
+                            android:textColorHint="@color/colourEdittextHint"
+                            android:fontFamily="@font/roboto_regular"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/capitalVoET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp"
+                                android:text="0"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/capitalClfTTL"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space2dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="Shared Capital with CLF"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColorHint="@color/colourEdittextHint"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/capitalClfET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp"
+                                android:text="0"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fundTransCardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space3dp"
+                android:layout_marginTop="@dimen/space5dp"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardElevation="7dp"
+                card_view:strokeColor="@color/colourTitleBlueBackground"
+                card_view:strokeWidth="1.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        style="@style/TitleTextViewTheme"
+                        android:layout_margin="@dimen/space3dp"
+                        android:background="@color/colourTitleBlueBackground"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/space2dp"
+                        android:text="Fund Transaction"
+                        android:textSize="@dimen/dimen_15" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/grantSrlmTTL"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space2dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="Startup Grant from SRLM"
+                            android:textColorHint="@color/colourEdittextHint"
+                            android:fontFamily="@font/roboto_regular"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/grantSrlmET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp"
+                                android:text="0"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/rfRecivedSrlmTTL"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space2dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="RF received from SRLM"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColorHint="@color/colourEdittextHint"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/rfRecivedSrlmET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp"
+                                android:text="0"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/rfReutrnedSrlmTTL"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space2dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="RF returned to SRLM"
+                            android:textColorHint="@color/colourEdittextHint"
+                            android:fontFamily="@font/roboto_regular"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/rfReutrnedSrlmET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp"
+                                android:text="0"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/cifRecivedSrlmTTL"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space2dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="CIF received from SRLM"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColorHint="@color/colourEdittextHint"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/cifRecivedSrlmET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp"
+                                android:text="0"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/cifReturnedSlrmTTL"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space2dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="CIF returned to SRLM"
+                            android:textColorHint="@color/colourEdittextHint"
+                            android:fontFamily="@font/roboto_regular"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/cifReturnedSlrmET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp"
+                                android:text="0"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/otherReciptTTL"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space2dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="Other Receipts"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColorHint="@color/colourEdittextHint"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/otherReciptET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp"
+                                android:text="0"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/grantOtherTTL"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space2dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="Grant from other Govt.Source"
+                            android:textColorHint="@color/colourEdittextHint"
+                            android:fontFamily="@font/roboto_regular"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/grantOtherET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp"
+                                android:text="0"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/vrfGrantNrlmTTL"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space2dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:hint="VRF grant from NRLM"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColorHint="@color/colourEdittextHint"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/vrfGrantNrlmET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp"
+                                android:text="0"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/closedLoanCardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space3dp"
+                android:layout_marginTop="@dimen/space5dp"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardElevation="7dp"
+                card_view:strokeColor="@color/colourTitleBlueBackground"
+                card_view:strokeWidth="1.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space3dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TitleTextViewTheme"
+                        android:layout_margin="@dimen/space3dp"
+                        android:background="@color/colourTitleBlueBackground"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/space2dp"
+                        android:text="Closed Loans"
+                        android:textSize="@dimen/dimen_15" />
+
+                    <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space2dp"
+                        android:layout_marginBottom="@dimen/space2dp"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        card_view:cardBackgroundColor="@color/colorWhite"
+                        card_view:cardElevation="7dp"
+                        card_view:strokeColor="@color/shrine_red"
+                        card_view:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/space3dp"
+                            android:weightSum="2">
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/closedLoanFromBankTTL"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:hint="Number of closed loan from Bank"
+                                android:textColorHint="@color/colourEdittextHint"
+                                android:fontFamily="@font/roboto_regular"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/closedLoanFromBankET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lines="1"
+                                    android:maxLength="5"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/colourTitleBlueBackground"
+                                    android:textSize="15dp"
+                                    android:text="0"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="number"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/closedAmountBankTTL"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:hint="Amount of closed Loans from Bank"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColorHint="@color/colourEdittextHint"
+                                app:startIconDrawable="@drawable/rupee_indian"
+                                app:startIconTint="@color/colorPrimaryDark"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/closedAmountBankET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lines="1"
+                                    android:maxLength="5"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/colourTitleBlueBackground"
+                                    android:textSize="15dp"
+                                    android:text="0"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="number"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space2dp"
+                        android:layout_marginBottom="@dimen/space2dp"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        card_view:cardBackgroundColor="@color/colorWhite"
+                        card_view:cardElevation="7dp"
+                        card_view:strokeColor="@color/shrine_red"
+                        card_view:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/space3dp"
+                            android:weightSum="2">
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/closedLoanVoTTL"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:hint="Number of Closed Loans from VO"
+                                android:textColorHint="@color/colourEdittextHint"
+                                android:fontFamily="@font/roboto_regular"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/closedLoanVoET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lines="1"
+                                    android:maxLength="5"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/colourTitleBlueBackground"
+                                    android:textSize="15dp"
+                                    android:text="0"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="number"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/amountClosedVoTTL"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:hint="Amount of Closed Loans from VO"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColorHint="@color/colourEdittextHint"
+                                app:startIconDrawable="@drawable/rupee_indian"
+                                app:startIconTint="@color/colorPrimaryDark"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/amountClosedVoET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lines="1"
+                                    android:maxLength="5"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/colourTitleBlueBackground"
+                                    android:textSize="15dp"
+                                    android:text="0"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="number"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space2dp"
+                        android:layout_marginBottom="@dimen/space5dp"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        card_view:cardBackgroundColor="@color/colorWhite"
+                        card_view:cardElevation="7dp"
+                        card_view:strokeColor="@color/shrine_red"
+                        card_view:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/space3dp"
+                            android:weightSum="2">
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/closedLoanClfTTL"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:hint="Number of Closed Loans from CLF"
+                                android:textColorHint="@color/colourEdittextHint"
+                                android:fontFamily="@font/roboto_regular"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/closedLoanClfET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lines="1"
+                                    android:maxLength="5"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/colourTitleBlueBackground"
+                                    android:textSize="15dp"
+                                    android:text="0"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="number"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/closedAmountClfTTL"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:hint="Amount of Closed Loans from CLF"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColorHint="@color/colourEdittextHint"
+                                app:startIconDrawable="@drawable/rupee_indian"
+                                app:startIconTint="@color/colorPrimaryDark"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/closedAmountClfET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lines="1"
+                                    android:maxLength="5"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/colourTitleBlueBackground"
+                                    android:textSize="15dp"
+                                    android:text="0"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="number"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/saveCutoffBtn"
+                    style="@style/TextButtonButton"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:backgroundTint="@color/colourTitleBlueBackground"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Save"
+                    android:textColor="@color/colorWhite" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/updateCutoffBtn"
+                    android:visibility="gone"
+                    style="@style/TextButtonButton"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:backgroundTint="@color/colourTitleBlueBackground"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="update"
+                    android:textColor="@color/colorWhite" />
+
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:visibility="visible"
+                android:id="@+id/runningLoanCardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space5dp"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardElevation="7dp"
+                card_view:strokeColor="@color/colourTitleBlueBackground"
+                card_view:strokeWidth="1.5dp">
+
+
+                <LinearLayout
+                    android:layout_margin="@dimen/space5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/runningLoanCB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textColor="@color/textBlack"
+                        android:padding="@dimen/space3dp"
+                        android:text="Is there any Running Loans for this SHG ?"/>
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/addRunningLoanLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/addRunningLoanBtn"
+                            style="@style/TextButtonButton"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:backgroundTint="@color/colourTitleBlueBackground"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Add Running Loan"
+                            android:textColor="@color/colorWhite" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:visibility="visible"
+                android:id="@+id/runningInsuranceCardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space5dp"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardElevation="7dp"
+                card_view:strokeColor="@color/colourTitleBlueBackground"
+                card_view:strokeWidth="1.5dp">
+
+
+                <LinearLayout
+                    android:layout_margin="@dimen/space5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/runninginsuranceCB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textColor="@color/textBlack"
+                        android:padding="@dimen/space3dp"
+                        android:text="Is there any Running Insurance for this SHG ?"/>
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/addRunningInsuranceLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/addRunningInsuranceBtn"
+                            style="@style/TextButtonButton"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:backgroundTint="@color/colourTitleBlueBackground"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Add Running Insurance"
+                            android:textColor="@color/colorWhite" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/botemBtnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cutoffBackBtn"
+            style="@style/TextButtonButton"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:backgroundTint="@color/shgCutoffBack"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Back"
+            android:textColor="@color/colorWhite" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cutOffSubmitBtn"
+            style="@style/TextButtonButton"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:backgroundTint="@color/button_background_red"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Submit"
+            android:textColor="@color/colorWhite" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cutOffCloseBtn"
+            style="@style/TextButtonButton"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:backgroundTint="@color/colourTitleBlueBackground"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Close"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

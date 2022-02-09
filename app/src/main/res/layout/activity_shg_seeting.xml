@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.Activities.ShgSeetingActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space3dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/location_spinner_layout" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/commonTextview"
+            style="@style/TitleTextViewTheme"
+            android:layout_marginBottom="@dimen/space3dp"
+           android:fontFamily="@font/roboto_bold"
+            android:background="@color/colourTitleBlueBackground"
+            android:text="XXXXXXXX" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commonRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/space5dp"
+            android:padding="@dimen/space2dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--arrays created by lincon-->
+<resources>
+    <string-array name="savingType">
+        <item>Compulsory Saving </item>
+        <item>Food Security Saving </item>
+        <item>Health Saving</item>
+        <item>Optional Saving</item>
+        <item>aaaa </item>
+        <item>bbb </item>
+        <item>cccccccccccc</item>
+        <item>dddddddddd </item>
+        <item>eeeeeeeeee </item>
+    </string-array>
+
+    <string-array name="receiptType">
+        <item>Loan</item>
+        <item>Grants</item>
+        <item>Others</item>
+        <item>Amount withdrawal from bank</item>
+        <item>Returns of saving with VO/CLF</item>
+        <item>Return of share capital with VO/CLF</item>
+        <item>Reciept from FD</item>
+        <item>Reciept from insurance policy</item>
+        <item>Fund received from Mission</item>
+        <item>Repayment loans By SHG member</item>
+    </string-array>
+
+    <string-array name="meeting_dates">
+        <item>12/15/2020</item>
+        <item>11/15/2020</item>
+        <item>10/15/2020</item>
+        <item>09/15/2020</item>
+        <item>08/15/2020</item>
+        <item>07/15/2020</item>
+    </string-array>
+
+    <string-array name="shg_payment_type">
+        <item>Admin Expenses</item>
+        <item>Savings</item>
+        <item>Fee/Allowances</item>
+        <item>Insurance</item>
+        <item>VRF</item>
+        <item>Withdrawal</item>
+        <item>Bank</item>
+        <item>Loans</item>
+        <item>Repayments</item>
+
+    </string-array>
+
+
+    <string-array name="admin_shg_payment_sub_type">
+        <item>Expenditure Incurred On Rent</item>
+        <item>Expenditure On SHG Meeting</item>
+    </string-array>
+
+    <string-array name="saving_shg_payment_sub_type">
+        <item>Investment/FD</item>
+        <item>Saving With VO/CLF</item>
+        <item>Share Capita Paid To VO/CLF</item>
+    </string-array>
+
+    <string-array name="fee_allowances_shg_payment_sub_type">
+        <item>Resource Fee Paid To SHG Member</item>
+        <item>Payment To Community Cadres</item>
+        <item>payment Made To Bookkeeper</item>
+        <item>Payment Made Towards TA/DA</item>
+    </string-array>
+
+    <string-array name="insurance_shg_payment_sub_type">
+        <item>Insurance Premium for Existing Policy</item>
+        <item>New Insurance</item>
+    </string-array>
+
+    <string-array name="vrf_shg_payment_sub_type">
+        <item>VRF Paid To Any Member</item>
+    </string-array>
+
+    <string-array name="withdrawal_shg_payment_sub_type">
+        <item>Withdrawal Of Saving By Member</item>
+    </string-array>
+
+    <string-array name="bank_shg_payment_sub_type">
+        <item>Bank Charge</item>
+        <item>Amount Deposited in Bank</item>
+    </string-array>
+
+    <string-array name="loans_shg_payment_sub_type">
+        <item>Amount given to Members towards Loan</item>
+    </string-array>
+
+    <string-array name="repayment_shg_payment_sub_type">
+        <item>Repayment of Loan by SHG</item>
+        <item>CIF Repaid to VO</item>
+    </string-array>
+
+    <string-array name="vendor_shg_payment_admin_type">
+        <item>Add New Vendor</item>
+        <item>Abdul</item>
+    </string-array>
+
+<!--=========================================================================================================-->
+    <string-array name="meetingFrequency">
+        <item>Weekly</item>
+        <item>Fornightly</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string-array name="cifReturnSeeting">
+        <item>Weekly</item>
+        <item>Fornightly</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string-array name="categoryArray">
+        <item>Farm Livelihood</item>
+        <item>Non Farm Livelhood</item>
+    </string-array>
+
+    <string-array name="subCategoryArray">
+        <item>Plantation</item>
+        <item>Animal and Husbandry</item>
+        <item>Forestry and Logging and Fishing</item>
+    </string-array>
+
+    <string-array name="savingTypeArray">
+        <item>cumpl</item>
+        <item>food</item>
+        <item>flower</item>
+        <item>abcd</item>
+        <item>kfksklfjdg</item>
+    </string-array>
+
+    <string-array name="moduleArray">
+        <item>SHG</item>
+
+    </string-array>
+
+    <string-array name="grand_type">
+        <item>-- Select Grand Type--</item>
+        <item>Startup Cost</item>
+        <item>Revolving Fund</item>
+        <item>VRF</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="grand_source">
+        <item>-- Select Grand Source--</item>
+        <item>SMMU</item>
+        <item>DMMU</item>
+        <item>BMMU</item>
+
+    </string-array>
+
+    <string-array name="transaction_mode">
+        <item>--Select Transaction Mode--</item>
+        <item>Cash</item>
+        <item>Bank</item>
+    </string-array>
+
+    <string-array name="other_receipt_type">
+        <item>--Select Other Receipt Type--</item>
+        <item>Interest Earned</item>
+        <item>Interest Subvention Amount</item>
+        <item>Resource Fee</item>
+        <item>Service Cost Recived</item>
+        <item>Award Money Received</item>
+        <item>Penality From Member</item>
+    </string-array>
+
+    <string-array name="amnt_wdrl_frm_bnk">
+        <item>--Select Bank Name--</item>
+
+    </string-array>
+    <string-array name="amnt_wdrl_frm_bnk_branch">
+        <item>--Select  Branch Name--</item>
+
+    </string-array>
+
+    <string-array name="fnd_rcvd_frm_msn_type">
+        <item>--Select Type--</item>
+    </string-array>
+
+    <string-array name="fnd_rcvd_frm_msn_source">
+        <item>--Select Source--</item>
+    </string-array>
+
+    <string-array name="fd_number">
+        <item>--Select FD Number--</item>
+    </string-array>
+
+    <string-array name="receipt_type">
+        <item>--Select Receipt Type--</item>
+    </string-array>
+
+    <string-array name="loan_repayment_typeM">
+        <item>--Select Loan Repayment Type--</item>
+    </string-array>
+
+    <string-array name="loan_repayment_sourceM">
+        <item>--Select Loan Repayment Source--</item>
+    </string-array>
+
+    <string-array name="loan_numberM">
+        <item>--Select Loan Number--</item>
+    </string-array>
+
+
+    <string-array name="loan_bank_existing_loan_type">
+        <item>--Select Loan Type--</item>
+    </string-array>
+
+    <string-array name="loan_bank_existing_loan_id">
+        <item>--Select Loan Id--</item>
+    </string-array>
+
+    <string-array name="loan_clf_existing_loan_type">
+        <item>--Select Loan Id--</item>
+    </string-array>
+
+
+</resources>

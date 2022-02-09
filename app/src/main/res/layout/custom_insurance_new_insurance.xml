@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_margin="@dimen/space5dp"
+        style="@style/TitleTextViewTheme"
+        android:text="NEW INSURANCE"
+        android:id="@+id/title"/>
+
+    <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space3dp"
+        card_view:cardBackgroundColor="@color/colorWhite"
+        card_view:cardElevation="7dp"
+        card_view:strokeColor="@color/colourTitleBlueBackground"
+        card_view:strokeWidth="1.5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Bank name"
+                android:textColorHint="@color/colourEdittextHint">
+
+                <AutoCompleteTextView
+                    android:id="@+id/bank_nameSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:inputType="none"
+                    android:textColor="@color/color_000"
+                    android:textColorHint="@color/colourTitleBlueBackground"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Branch code"
+                android:textColorHint="@color/colourEdittextHint">
+
+                <AutoCompleteTextView
+                    android:id="@+id/branch_codeSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:inputType="none"
+                    android:textColor="@color/color_000"
+                    android:textColorHint="@color/colourTitleBlueBackground"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space10dp"
+                android:layout_marginLeft="@dimen/space5dp"
+                android:layout_marginRight="@dimen/space5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Policy number"
+                android:textColorHint="@color/colourEdittextHint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/policy_numberET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="5"
+                    android:textColor="@color/color_000"
+                    android:textColorHint="@color/inner_cardview_border"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space10dp"
+                android:layout_marginLeft="@dimen/space5dp"
+                android:layout_marginRight="@dimen/space5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Risk covered"
+                android:textColorHint="@color/colourEdittextHint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/risk_coverdET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:inputType="none"
+                    android:lines="1"
+                    android:maxLength="5"
+                    android:textColor="@color/color_000"
+                    android:textColorHint="@color/inner_cardview_border"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space10dp"
+                android:layout_marginLeft="@dimen/space5dp"
+                android:layout_marginRight="@dimen/space5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Premium amount"
+                android:textColorHint="@color/colourEdittextHint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/premiumAmountET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="5"
+                    android:textColor="@color/color_000"
+                    android:textColorHint="@color/inner_cardview_border"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space10dp"
+                android:layout_marginLeft="@dimen/space5dp"
+                android:layout_marginRight="@dimen/space5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Start date"
+                android:textColorHint="@color/colourEdittextHint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/startdateET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="5"
+                    android:textColor="@color/color_000"
+                    android:textColorHint="@color/inner_cardview_border"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space10dp"
+                android:layout_marginLeft="@dimen/space5dp"
+                android:layout_marginRight="@dimen/space5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="End date"
+                android:textColorHint="@color/colourEdittextHint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/end_dateET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="5"
+                    android:textColor="@color/color_000"
+                    android:textColorHint="@color/inner_cardview_border"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

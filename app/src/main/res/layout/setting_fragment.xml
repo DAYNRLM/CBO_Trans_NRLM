@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space3dp"
+            android:orientation="vertical">
+            <include layout="@layout/location_spinner_layout"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginTop="@dimen/dimen_5"
+            app:cardElevation="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/TitleTextViewTheme"
+                    android:layout_margin="@dimen/space3dp"
+                    android:text="@string/shg_seetings" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/space3dp">
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/selectShgSpinner"
+                        style="@style/CustomSpinner"
+                        android:hint="@string/select_shg"
+                        app:met_floatingLabel="normal"/>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/meetingFrequencySpinner"
+                        style="@style/CustomSpinner"
+                        android:hint="@string/select_meeting_freq"
+                        app:met_floatingLabel="normal"/>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/savingFrequencySpinner"
+                        style="@style/CustomSpinner"
+                        android:hint="@string/select_saving_freq"
+                        app:met_floatingLabel="normal"/>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/cifReturendSpinner"
+                        style="@style/CustomSpinner"
+                        android:hint="@string/select_cif_returend_agency"
+                        app:met_floatingLabel="normal"/>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/rfReturendSpinner"
+                        style="@style/CustomSpinner"
+                        android:hint="@string/select_rf_returend"
+                        app:met_floatingLabel="normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="@dimen/dimen_5"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/TitleTextViewTheme"
+                    android:layout_margin="@dimen/space3dp"
+                    android:text="@string/shg_activity" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/space3dp">
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/shgActivitySpinner"
+                        style="@style/CustomSpinner"
+                        android:hint="@string/shg_activity_spinner"
+                        app:met_floatingLabel="normal"/>
+
+                    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                        android:id="@+id/shgSubActivitySpinner"
+                        style="@style/CustomSpinner"
+                        android:hint="@string/shg_activity_sub_spinner"
+                        app:met_floatingLabel="normal"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            android:id="@+id/savingCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="@dimen/dimen_5"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/common_recyclerview"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/setFrequency"
+            android:layout_width="match_parent"
+            android:text="Add Frequency"
+            app:icon="@android:drawable/ic_input_add"
+            style="@style/IconTextContainedButton" />
+    </LinearLayout>
+
+</ScrollView>

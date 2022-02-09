@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Nomination layout for shg-->
+    <LinearLayout
+        android:layout_above="@+id/botemBtnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/space10dp"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/space10dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TitleTextViewTheme"
+            android:layout_margin="@dimen/space3dp"
+            android:background="@color/colourTitleBlueBackground"
+            android:gravity="left"
+            android:padding="@dimen/space2dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="SHG Member's Nominee and Activites"
+            android:textSize="@dimen/dimen_15" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space3dp"
+            card_view:cardElevation="7dp"
+            card_view:strokeColor="@color/colourTitleBlueBackground"
+            card_view:strokeWidth="2dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/commonRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/space5dp"
+                android:padding="@dimen/space2dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+    <!-- end Nomination layout-->
+
+    <LinearLayout
+        android:id="@+id/botemBtnLayout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nomineeRejectBtn"
+            style="@style/TextButtonButton"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:backgroundTint="@color/button_background_red"
+            android:text="Close"
+            android:textColor="@color/colorWhite" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nomineeSaveBtn"
+            style="@style/TextButtonButton"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:backgroundTint="@color/colourTitleBlueBackground"
+            android:text="Save"
+            android:textColor="@color/colorWhite" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

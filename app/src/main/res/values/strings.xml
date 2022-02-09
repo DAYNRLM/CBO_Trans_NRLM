@@ -1,0 +1,204 @@
+<resources>
+    <string name="app_name">CBO</string>
+    <string name="booki">BookI</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="read_it_together">My SHG</string>
+    <string name="skip">Skip</string>
+    <string name="login">Login</string>
+    <string name="user_id">User-ID</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forget_password">Forget Password.?</string>
+    <string name="bottom_text">Design, hosted and maintained by NIC,Content provided by MORD.</string>
+    <string name="verification">Verification</string>
+    <string name="settings">Settings</string>
+    <string name="cut_off">SHG cut-off</string>
+    <string name="membre_cut_off">Member cut-off</string>
+    <string name="attendance">Attendance</string>
+    <string name="saving">Savings</string>
+    <string name="receipts">Receipts</string>
+    <string name="payment">Payments</string>
+    <string name="logout">Logout</string>
+    <string name="change_language">Change language</string>
+
+    <string name="home">Home</string>
+    <string name="info">Info</string>
+    <string name="ok">OK</string>
+    <string name="savings">Savings</string>
+    <string name="openDrawer">Drawer Open</string>
+    <string name="closeDrawer">Drawer Close</string>
+    <string name="name_abc">Name ABC</string>
+    <string name="sync">Sync</string>
+    <string name="language">Language</string>
+    <string name="toast_exit_app">Press again to exit</string>
+    <string name="no_internet_dialog">No Internet!</string>
+    <string name="server_error_dialog">Server Error!</string>
+    <string name="NO_INTERNET_TITLE">No Internet!</string>
+    <string name="SERVER_ERROR_TITLE">Server Error!</string>
+    <string name="take_photo">Take Photo</string>
+
+    <!--string added by lincon-->
+    <string name="select_grampanchayat">Select Gram Panchayat</string>
+    <string name="select_villages">Select Village</string>
+    <string name="select_shg">Select SHG</string>
+    <string name="select_category">Select Category<font color='#FFFF1100'>*</font><i><font color='#FFFF1100' size='10'></font></i> </string>
+    <string name="select_sub_category">Select Sub Category<font color='#FFFF1100'>*</font><i><font color='#FFFF1100' size='10'></font></i> </string>
+    <string name="select_meeting_freq">Select Meeting Frequency<font color='#FFFF1100'>*</font><i><font color='#FFFF1100' size='10'></font></i></string>
+    <string name="select_saving_freq">Select Saving Frequency Member</string>
+    <string name="select_cif_returend_agency">CIF to be Returned to<font color='#FFFF1100'>*</font><i><font color='#FFFF1100' size='10'></font></i> </string>
+    <string name="select_rf_returend_agency">RF to be Returned to<font color='#FFFF1100'>*</font><i><font color='#FFFF1100' size='10'></font></i> </string>
+    <!--<string name="select_cif_returend_agency">CIF to be Returned to<font color='#FFFF1100'>*</font><i><font color='#FFFF1100' size='10'> (dd-mm-yyy)</font></i> </string>-->
+    <string name="select_rf_returend">RF needs to be return</string>
+    <string name="shg_activity">SHG Activity</string>
+    <string name="shg_seetings">SHG Seetings</string>
+    <string name="shg_activity_spinner">SHG Activity</string>
+    <string name="shg_activity_sub_spinner">SHG Sub Activity</string>
+    <string name="shg_saving_for_member">Saving For Member</string>
+    <string name="shg_saving_amount">Amount</string>
+    <string name="shg_add">Add</string>
+    <string name="shg_cancel">Cancel</string>
+
+    <string name="select_relation">Select Relation<font color='#FFFF1100'>*</font><i><font color='#FFFF1100' size='10'></font></i> </string>
+    <!--===========================================aaaaaaaaaaaaaaa===========================================================-->
+
+    <string name="title_activity_reciepts">Reciepts</string>
+    <string name="title_activity_grand_reciepts">Grand Reciepts</string>
+    <string name="shg_details">SHG Details</string>
+    <string name="action_settings">Search</string>
+    <string name="reciept_type_MBS_hint">Reciept Type</string>
+    <string name="reciept_sub_type_MBS_hint">Reciept Sub Type</string>
+    <string name="reciept__sub_to_sub_type">Reciept Sub to Sub Type</string>
+    <string name="meeting_date_MBS_hint">Meeting Date</string>
+    <string name="title_activity_grand_reciept">ScrollingActivity</string>
+    <string name="grand_type">Grand Type</string>
+    <string name="grand_source">Grand Source</string>
+    <string name="grand_id">Grand Id</string>
+    <string name="grand_agency_name">Grand Agency Name</string>
+    <string name="amount_received">Amount Recieved</string>
+    <string name="date_received">Date Received</string>
+    <string name="title_activity_saving">Saving</string>
+    <string name="title_activity_member_saving">Member Saving</string>
+    <string name="last_meeting_date">Last Meeting Date</string>
+    <string name="meeting_number">Meeting Number</string>
+    <string name="meeting_date">Meeting Date</string>
+    <string name="cashbook_no">Cash Book Number</string>
+    <string name="ifsc_codeTV">IFSC Code</string>
+    <string name="cashbook_page_no">Cash Book Page Number</string>
+    <string name="savings_type">Savings:</string>
+    <string name="no_member_found">No member found of selected SHG.</string>
+    <string name="no_saving_found_msg">No savings found of this member.</string>
+    <string name="father_husband_Name">Father/Husband Name</string>
+    <string name="compulsory_saving">Compulsory Saving</string>
+    <string name="food_saving">Food Saving</string>
+    <string name="health_saving">Health Saving</string>
+    <string name="optional_saving">Optional Saving</string>
+    <string name="search_by_shgname">Search by Shg name</string>
+    <string name="search_by_membername">Search by Member name</string>
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="loan_to_shg">Loan To SHG</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="title_activity_payment">SHG Payment</string>
+    <string name="shg_payment_type">SHG Payment Type</string>
+    <string name="shg_payment_sub_type">SHG Payment Sub Type</string>
+    <string name="payment_agency_type">Payment Agency Type</string>
+    <string name="title_activity_shg_loans_payment">SHG Loan Payment</string>
+    <string name="vendor_name">Vendor Name</string>
+    <string name="vendor_description">Vendor Name</string>
+    <string name="amount_paid">Amount Paid</string>
+    <string name="date_paid">Date Paid</string>
+    <string name="add_vendor_details">Add Vendor Details</string>
+    <string name="tin_number">TIN Number</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="loan_number">Loan Number</string>
+    <string name="loading">Loading...</string>
+    <string name="loan_repayment_by">Loan Repayment By</string>
+    <string name="digits_caps_letter">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="loan_sncsn_amount">Loan Sanction Amount(Rs)</string>
+    <string name="loan_sncsn_date">Loan Sanction Date</string>
+    <string name="roi">ROI (%)</string>
+    <string name="installments">Number of Installment</string>
+    <string name="disbursed_amount">Disbursed Amount(Rs)</string>
+    <string name="disbursed_date">Disbursed Date</string>
+    <string name="loan_repayment_start_date">Loan Repayment Start Date</string>
+    <string name="emis">EMI (Rs)</string>
+    <string name="transaction_mode">Transaction Mode</string>
+    <string name="cash_credit_limit">Cash Credit Limit(Rs)</string>
+
+    <!--==================validations ===========-->
+    <string name="error_vendor_name">Name lenght can not less 3</string>
+    <string name="error_tin_number">TIN Number can not less 3</string>
+    <string name="error_vendor_phone">Invalid phone number</string>
+    <string name="error_address">Invalid Address</string>
+    <string name="error_grand_number">Please fill grand number</string>
+    <string name="error_grand_agency_name">Please fill grand agency name</string>
+    <string name="error_amount_received">Please fill received amount</string>
+    <string name="error_grand_type">Please select grand type</string>
+    <string name="error_grand_source">Please select grand source</string>
+
+    <string name="error_frfm_type">Please select type</string>
+    <string name="error_frfm_source">Please select source</string>
+    <string name="error_frfm_receipt_number">Please fill receipt number</string>
+    <string name="error_frfm_amount">Please fill amount</string>
+
+    <string name="error_other_receipt_source">Please fill other receipt source</string>
+    <string name="error_other_receipt_number">Please fill other receipt number</string>
+    <string name="error_other_receipt_agency_name">Please fill other  agency name</string>
+    <string name="error_other_receipt_amount">Please fill other receipt amount</string>
+    <string name="error_other_receipt_type">Please select other receipt type</string>
+
+    <string name="error_receipt_fd_amount">Please fill receipt amount</string>
+    <string name="error_receipt_fd_type">Please select receipt type</string>
+    <string name="error_receipt_fd_number">Please select FD number</string>
+
+    <string name="error_amount_wdrl_bank">Please select bank</string>
+    <string name="error_amount_wdrl_branch">Please select branch</string>
+    <string name="error_amount_wdrl_amount">Please enter amount</string>
+
+    <string name="error_select_date">Please select date</string>
+    <string name="error_trans_mode">Please select transaction mode</string>
+
+    <!--=========================================================================-->
+
+
+    <string name="grant_type">Grant Type</string>
+    <string name="grant_source">Grant Source</string>
+    <string name="grant_number">Grant Number</string>
+    <string name="grant_agency_name">Grant Agency Name</string>
+
+
+
+    <string name="html">
+        <![CDATA[
+        <h1>Main Title</h1>
+        <h2>A sub-title</h2>
+        <p>This is some html. Look, here\'s an <u>underline</u>.</p>
+        <p>Look, this is <em>emphasized.</em> And here\'s some <b>bold</b>.</p>
+        <p>This is a UL list:
+        <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        </ul>
+        <p>This is an OL list:
+        <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        </ol>
+        ]]>
+    </string>
+    <string name="title_activity_module_selection">ModuleSelectionActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+
+</resources>

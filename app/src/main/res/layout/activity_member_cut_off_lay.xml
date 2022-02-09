@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+
+    tools:context=".view.Activities.MemberCutOffLayActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <!--Meeting Date
+12-12-2020
+Meeting Number
+12
+--> <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_55"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    app:cardCornerRadius="@dimen/dimen_10"
+                    android:elevation="@dimen/dimen_10"
+                    android:translationZ="@dimen/dimen_5"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_5"
+                        android:gravity="top"
+                        android:textSize="@dimen/dimen_15"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:text="Member Name"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        app:cardBackgroundColor="@color/colorPrimaryDark"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:layout_marginBottom="@dimen/dimen_5"
+                        app:cardCornerRadius="@dimen/dimen_10"
+                        android:elevation="@dimen/dimen_10"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_5"
+                            android:layout_marginRight="@dimen/dimen_5"
+                            android:id="@+id/member_nameTv"
+
+                            android:textSize="@dimen/dimen_15"
+                            android:typeface="monospace"
+
+                            android:textColor="@color/textBlack"
+                            android:textStyle="bold"
+                            android:text="xxxxx"/>
+                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    app:cardCornerRadius="@dimen/dimen_10"
+                    android:elevation="@dimen/dimen_10"
+                    android:translationZ="@dimen/dimen_5"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_5"
+                        android:gravity="top"
+                        android:textSize="@dimen/dimen_15"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:text="Member code"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        app:cardBackgroundColor="@color/colorPrimaryDark"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:layout_marginBottom="@dimen/dimen_5"
+                        app:cardCornerRadius="@dimen/dimen_10"
+                        android:elevation="@dimen/dimen_10"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/member_codeTV"
+                            android:layout_marginLeft="@dimen/dimen_5"
+                            android:layout_marginRight="@dimen/dimen_5"
+                            android:textSize="@dimen/dimen_15"
+                            android:gravity="center"
+                            android:typeface="monospace"
+                            android:layout_gravity="center"
+                            android:textColor="@color/textBlack"
+                            android:textStyle="bold"
+                            android:text="xxxx"/>
+                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginTop="@dimen/dimen_5"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+                <TextView
+                    android:text="Member Cutoff"
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:gravity="left"
+
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dimen_20"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="none"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"/>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:layout_above="@+id/botemBtnLayout"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space5dp"
+            android:orientation="vertical">
+            <!--shg setting start layout-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/test"
+                    style="@style/TitleTextViewTheme"
+                    android:layout_margin="@dimen/space3dp"
+                    android:background="@color/colourTitleBlueBackground"
+                    android:gravity="left"
+                    android:padding="@dimen/space2dp"
+                    android:text="Member CutOff"
+                    android:textSize="@dimen/dimen_15" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/shgName_Tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/shrine_red"
+                    android:gravity="center_horizontal"
+
+                    android:padding="@dimen/space2dp"
+                    android:text="SHG Information"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_14SP"
+                    android:textStyle="normal">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+            </RelativeLayout>
+
+
+            <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space3dp"
+                card_view:cardElevation="7dp"
+                card_view:strokeColor="@color/gray_background"
+                card_view:strokeWidth="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:hint="Number of closed loan">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/number_of_closed_loanEt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colorPrimaryDark" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:hint="Amount of closed loans">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/amount_of_closedloanEt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dimen_2"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colorPrimaryDark" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:layout_weight="1"
+                        android:hint="Number of meetings attended since beginning">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/meeting_attendedET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dimen_2"
+                            android:layout_marginBottom="@dimen/dimen_2"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:maxLength="5"
+                            android:textColor="@color/color_000"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TitleTextViewTheme"
+                    android:background="@color/colourTitleBlueBackground"
+                    android:text="Add savings" />
+                <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space3dp"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    card_view:cardElevation="7dp"
+                    card_view:strokeColor="@color/gray_background"
+                    card_view:strokeWidth="1dp">
+                    <LinearLayout
+                        android:id="@+id/layout_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_5"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:id="@+id/addImg"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:src="@drawable/add_ic_new"></ImageView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/space3dp"
+                card_view:cardElevation="7dp"
+                card_view:strokeColor="@color/gray_background"
+                card_view:strokeWidth="1dp">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_add"
+                    style="@style/IconTextContainedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:drawableRight="@drawable/add_ic_new"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Add"
+                    android:textColor="@color/textBlack">
+                </com.google.android.material.button.MaterialButton>
+            </com.google.android.material.card.MaterialCardView>
+            <!--  <com.google.android.material.textfield.TextInputLayout
+                android:hint="Cash in Hand"
+                app:hintTextColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                app:startIconDrawable="@drawable/rupee_indian"
+                app:startIconTint="@color/colorPrimaryDark"
+                android:layout_width="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="10dp"
+                    android:textColor="@color/textBlack"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            &lt;!&ndash;app:startIconContentDescription="rupees"&ndash;&gt;
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="Cash in Bank"
+                android:layout_height="wrap_content"
+                app:startIconDrawable="@drawable/rupee_indian"
+                android:layout_width="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textBlack"/>
+            </com.google.android.material.textfield.TextInputLayout>-->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/runningLoanCardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space5dp"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardElevation="7dp"
+                app:strokeColor="@color/colourTitleBlueBackground"
+                app:strokeWidth="1.5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space5dp"
+                    android:orientation="vertical">
+                    <CheckBox
+                        android:id="@+id/runningLoanCB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:padding="@dimen/space3dp"
+                        android:text="Is there any Running Loans for this SHG Member ?"
+                        android:textColor="@color/textBlack" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+                    <com.google.android.material.card.MaterialCardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space3dp"
+                        app:cardElevation="7dp"
+
+                        app:strokeColor="@color/gray_background"
+                        app:strokeWidth="1dp">
+
+                        <com.google.android.material.button.MaterialButton
+
+                            android:id="@+id/delete_runing_loanBT"
+                            style="@style/IconTextContainedButton"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dimen_5"
+                            android:layout_marginRight="@dimen/dimen_5"
+                            android:backgroundTint="@color/shrine_red"
+                            android:drawableRight="@drawable/delete_ic"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Delete"
+                            android:textColor="@color/textBlack"
+                            android:visibility="gone">
+
+                        </com.google.android.material.button.MaterialButton>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.card.MaterialCardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space3dp"
+                            app:cardElevation="7dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dimen_5"
+                            app:strokeColor="@color/gray_background"
+                            app:strokeWidth="1dp">
+                            <com.google.android.material.button.MaterialButton
+                               android:id="@+id/add_runing_loanBT"
+
+                                style="@style/IconTextContainedButton"
+                                android:layout_width="wrap_content"
+                                android:visibility="gone"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dimen_5"
+                                android:layout_marginLeft="@dimen/dimen_5"
+                                android:drawableRight="@drawable/add_ic_new"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Add"
+
+                                android:textColor="@color/textBlack">
+                            </com.google.android.material.button.MaterialButton>
+                        </com.google.android.material.card.MaterialCardView>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                     </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/shg_member_loanLL"
+    android:orientation="vertical">
+</LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/botemBtnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cutoffBackBtn"
+            style="@style/TextButtonButton"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:backgroundTint="@color/shgCutoffBack"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Back"
+            android:textColor="@color/colorWhite" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cutOffSubmitBtn"
+            style="@style/TextButtonButton"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:backgroundTint="@color/button_background_red"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Submit"
+            android:textColor="@color/colorWhite" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cutOffCloseBtn"
+            style="@style/TextButtonButton"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:backgroundTint="@color/colourTitleBlueBackground"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Close"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+</RelativeLayout>

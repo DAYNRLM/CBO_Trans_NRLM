@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space5dp">
+
+        <TextView
+            style="@style/TitleTextViewTheme"
+            android:layout_margin="@dimen/space3dp"
+            android:text="@string/shg_saving_for_member" />
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/selectSavingSpinner"
+            style="@style/CustomSpinner"
+            android:hint="@string/shg_saving_for_member"
+            app:met_floatingLabel="normal"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space10dp"
+            android:layout_marginRight="@dimen/space10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colourGreenText"
+                android:text="Weekly"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colourGreenText"
+                android:text="Fortnightly"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colourGreenText"
+                android:text="Monthly"/>
+
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space5dp"
+            android:layout_marginTop="@dimen/space10dp"
+            android:hint="@string/shg_saving_amount">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/savingAmountEt"
+                android:layout_margin="@dimen/space5dp"
+                android:lines="1"
+                android:maxLength="15"
+                android:inputType="number"
+                android:textColor="@color/colourGreenText"
+                android:textColorHint="@color/colourSpinnerHint"
+                android:textSize="@dimen/text_size_18SP" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addFrequencyBtn"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/space10dp"
+                android:layout_marginRight="@dimen/space10dp"
+                android:layout_weight="1"
+                android:text="@string/shg_add"
+                style="@style/IconTextContainedButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelBtn"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/space10dp"
+                android:layout_marginRight="@dimen/space10dp"
+                android:layout_weight="1"
+                android:text="@string/shg_cancel"
+                style="@style/IconTextContainedButton" />
+        </LinearLayout>
+
+
+       <!-- <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:text="Search"
+            style="@style/TextButtonButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:text="Search"
+            app:icon="@android:drawable/ic_menu_search"
+            style="@style/IconTextButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:text="Search"
+            app:icon="@android:drawable/ic_menu_search"
+            style="@style/IconTextContainedButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:text="Outlined button"
+            style="@style/OutlineTextButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:text="Outlined button"
+            style="@style/OutlineIconTextButton"
+            app:icon="@android:drawable/ic_menu_search"/>-->
+
+    </LinearLayout>
+
+</LinearLayout>

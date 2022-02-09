@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/insuranceFormLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space3dp"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardElevation="7dp"
+                card_view:strokeColor="@color/colourTitleBlueBackground"
+                card_view:strokeWidth="1.5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/policyNumberTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Policy Number"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/policyNumberEt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="10"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/inner_cardview_border"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/policyNameTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Policy Name"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/policyNameEt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:lines="1"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/inner_cardview_border"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginBottom="@dimen/space8dp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+                            android:id="@+id/premiumAmountTTL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Policy Premium Amount"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/premiumAmountET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="6"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/inner_cardview_border"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/policyRiskTTL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Policy Risk Cover"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/policyRiskET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="6"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/inner_cardview_border"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginBottom="@dimen/space8dp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+                            android:id="@+id/policyStartDateTTL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Policy Start Date"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/policyStartDateET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/inner_cardview_border"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/policyEndTTL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Policy End Date"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/policyEndET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/inner_cardview_border"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/botemBtnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/closeInsuranceBtn"
+                style="@style/TextButtonButton"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:backgroundTint="@color/button_background_red"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Close"
+                android:textColor="@color/colorWhite" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addInsuranceBtn"
+                style="@style/TextButtonButton"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:backgroundTint="@color/colourTitleBlueBackground"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Add Insurance"
+                android:textColor="@color/colorWhite" />
+
+            <com.google.android.material.button.MaterialButton
+                android:visibility="gone"
+                android:id="@+id/updateBtn"
+                style="@style/TextButtonButton"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:backgroundTint="@color/colourTitleBlueBackground"
+                android:fontFamily="@font/roboto_bold"
+                android:text="update"
+                android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/recyclerRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_above="@+id/BtnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/recyclerviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space3dp"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardElevation="7dp"
+                card_view:strokeColor="@color/colourTitleBlueBackground"
+                card_view:strokeWidth="1.5dp">
+
+                <LinearLayout
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/runningInsuranceRV"
+                        android:padding="@dimen/dimen_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/BtnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/closeRvBtn"
+                style="@style/TextButtonButton"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:backgroundTint="@color/button_background_red"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Close"
+                android:textColor="@color/colorWhite" />
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addMoreInsuranceBtn"
+                style="@style/TextButtonButton"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:backgroundTint="@color/colourTitleBlueBackground"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Add more Loans"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

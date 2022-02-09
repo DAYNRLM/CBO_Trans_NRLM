@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.Activities.ShgSeetingCommonActivity">
+
+    <FrameLayout
+        android:id="@+id/seetingCommonFramContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:id="@+id/scrolLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnLayout"
+            android:layout_marginBottom="6dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--shg setting layout-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space5dp"
+                    android:layout_marginRight="@dimen/space5dp"
+                    android:orientation="vertical">
+
+                    <!--shg setting start layout-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/test"
+                            style="@style/TitleTextViewTheme"
+                            android:layout_margin="@dimen/space3dp"
+                            android:background="@color/colourTitleBlueBackground"
+                            android:gravity="left"
+                            android:padding="@dimen/space2dp"
+                            android:text="SHG Settings"
+                            android:textSize="@dimen/dimen_15" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/shgName_Tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="110dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/shrine_red"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/space2dp"
+                            android:text="SHG Information"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_14SP"
+                            android:textStyle="normal">
+
+                        </com.google.android.material.textview.MaterialTextView>
+
+                    </RelativeLayout>
+
+                    <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space3dp"
+                        card_view:cardElevation="7dp"
+                        card_view:strokeColor="@color/gray_background"
+                        card_view:strokeWidth="1.5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/meetingFrequencySpinnerTIL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/space5dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="@string/select_meeting_freq"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/meetingFrequencySpinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="none"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/colourTitleBlueBackground"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/space5dp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/space3dp"
+                                    android:text="Is RF to be Returned?" />
+
+                                <RadioGroup
+                                    android:id="@+id/rfradioGroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+
+                                    <RadioButton
+                                        android:id="@+id/yesRadioBtn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Yes" />
+
+                                    <RadioButton
+                                        android:id="@+id/noRadioBtn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/dimen_30"
+                                        android:text="No" />
+                                </RadioGroup>
+
+
+                            </LinearLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/rfReturnedSpinnerTIL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/space5dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="@string/select_rf_returend_agency"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/rfReturnedSpinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="none"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/colourTitleBlueBackground"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/cifReturnedSpinnerTIL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/space5dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="@string/select_cif_returend_agency"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/cifReturnedSpinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="none"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/colourTitleBlueBackground"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                        </LinearLayout>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+                    <!--end startlayout-->
+
+
+                </LinearLayout>
+
+
+                <!--leader information-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TitleTextViewTheme"
+                        android:background="@color/colourTitleBlueBackground"
+                        android:text="Leader Information" />
+
+                    <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space3dp"
+                        card_view:cardElevation="7dp"
+                        card_view:strokeColor="@color/gray_background"
+                        card_view:strokeWidth="1.5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/space3dp"
+                                    card_view:cardElevation="7dp"
+                                    card_view:strokeColor="@color/colourTitleBlueBackground"
+                                    card_view:strokeWidth="2dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:weightSum="2">
+
+
+                                        <!-- <com.google.android.material.textfield.TextInputLayout
+                                             android:id="@+id/presidentSpinnerTIL"
+                                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:layout_margin="@dimen/space5dp"
+                                             android:fontFamily="@font/roboto_regular"
+                                             android:hint="Leader1/President"
+                                             android:textColorHint="@color/colourEdittextHint">
+
+                                             <AutoCompleteTextView
+                                                 android:id="@+id/presidentSpinner"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 android:fontFamily="@font/roboto_regular"
+                                                 android:inputType="none"
+                                                 android:textColor="@color/color_000"
+                                                 android:textColorHint="@color/colourTitleBlueBackground"
+                                                 android:focusable="false"
+                                                 android:focusableInTouchMode="false"
+                                                 android:textSize="15dp" />
+
+                                         </com.google.android.material.textfield.TextInputLayout>-->
+
+
+                                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                            android:id="@+id/presidentSpinner"
+                                            style="@style/CustomSpinner"
+                                            android:layout_weight="1"
+                                            android:hint="Leader1/President"
+                                            app:met_floatingLabel="normal" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="@dimen/dimen_5"
+                                            android:background="@color/leaderHighlight"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:padding="@dimen/dimen_2"
+                                                android:text="Father Name : " />
+
+                                            <TextView
+                                                android:id="@+id/presidentFatherTv"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:padding="@dimen/dimen_2"
+                                                android:text="Father Name : " />
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/space3dp"
+                                    card_view:cardElevation="7dp"
+                                    card_view:strokeColor="@color/colourTitleBlueBackground"
+                                    card_view:strokeWidth="2dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:weightSum="2">
+
+                                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                            android:id="@+id/secretarySpinner"
+                                            style="@style/CustomSpinner"
+                                            android:layout_weight="1"
+                                            android:hint="Leader2/Secretary"
+                                            app:met_floatingLabel="normal" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_5"
+                                            android:background="@color/leaderHighlight"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:padding="@dimen/dimen_2"
+                                                android:text="Father Name : " />
+
+                                            <TextView
+                                                android:id="@+id/secretaryFatherTv"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:padding="@dimen/dimen_2"
+                                                android:text="Father Name : " />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/space3dp"
+                                    card_view:cardElevation="7dp"
+                                    card_view:strokeColor="@color/colourTitleBlueBackground"
+                                    card_view:strokeWidth="2dp">
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:weightSum="2">
+
+                                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                            android:id="@+id/tressurerSpinner"
+                                            style="@style/CustomSpinner"
+                                            android:layout_weight="1"
+                                            android:hint="Leader3/Tressurer"
+                                            app:met_floatingLabel="normal" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_5"
+                                            android:background="@color/leaderHighlight"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:padding="@dimen/dimen_2"
+                                                android:text="Father Name : " />
+
+                                            <TextView
+                                                android:id="@+id/tressurerFatherTv"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:padding="@dimen/dimen_2"
+                                                android:text="Father Name : " />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/space3dp"
+                                    card_view:cardElevation="7dp"
+                                    card_view:strokeColor="@color/colourTitleBlueBackground"
+                                    card_view:strokeWidth="2dp">
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:weightSum="2">
+
+                                        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                                            android:id="@+id/bookKeeperSpinner"
+                                            style="@style/CustomSpinner"
+                                            android:layout_weight="1"
+                                            android:hint="BookKeeper"
+                                            app:met_floatingLabel="normal" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="@dimen/dimen_5"
+                                            android:background="@color/leaderHighlight"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/roboto_regular"
+                                                android:padding="@dimen/dimen_2"
+                                                android:text="Father Name : " />
+
+                                            <TextView
+                                                android:id="@+id/bookKeeperFatherTv"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:padding="@dimen/dimen_2"
+                                                android:text="Father Name : " />
+
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </com.google.android.material.card.MaterialCardView>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+                <!--end leader information-->
+
+                <!--shg activity layout-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space10dp"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:layout_marginRight="@dimen/space10dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/TitleTextViewTheme"
+                        android:background="@color/colourTitleBlueBackground"
+                        android:text="SHG Activity" />
+
+                    <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space3dp"
+                        card_view:cardElevation="7dp"
+                        card_view:strokeColor="@color/gray_background"
+                        card_view:strokeWidth="1.5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/categorySpinnerTIL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/space5dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="@string/select_category"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/categorySpinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="none"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/colourTitleBlueBackground"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/subCategorySpinnerTIL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/space5dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="@string/select_sub_category"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/subCategorySpinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="none"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/colourTitleBlueBackground"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/descriptionSpinnerTIL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/space5dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Description"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/descriptionSpinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="none"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/colourTitleBlueBackground"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+                <!--end shg activity layout-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/dimen_20"
+                    android:orientation="vertical">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/saveFormDataBtn"
+                            style="@style/TextButtonButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:backgroundTint="@color/colourTitleBlueBackground"
+                            android:text="Save"
+                            android:textColor="@color/colorWhite" />
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:visibility="visible"
+                    android:id="@+id/savingCardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space5dp"
+                    card_view:cardBackgroundColor="@color/colorWhite"
+                    card_view:cardElevation="7dp"
+                    card_view:strokeColor="@color/colourTitleBlueBackground"
+                    card_view:strokeWidth="1.5dp">
+
+
+                    <LinearLayout
+                        android:layout_margin="@dimen/space5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/savingCB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textColor="@color/textBlack"
+                            android:padding="@dimen/space3dp"
+                            android:text="Go to SHG Savings"/>
+
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/addSavingLL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/addSavingBtn"
+                                style="@style/TextButtonButton"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="@dimen/dimen_10"
+                                android:backgroundTint="@color/colourTitleBlueBackground"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="Add shg saving"
+                                android:textColor="@color/colorWhite" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+                <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:visibility="visible"
+                    android:id="@+id/nominationCardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space5dp"
+                    card_view:cardBackgroundColor="@color/colorWhite"
+                    card_view:cardElevation="7dp"
+                    card_view:strokeColor="@color/colourTitleBlueBackground"
+                    card_view:strokeWidth="1.5dp">
+
+
+                    <LinearLayout
+                        android:layout_margin="@dimen/space5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/nominationCB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textColor="@color/textBlack"
+                            android:padding="@dimen/space3dp"
+                            android:text="Go for Nomination"/>
+
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/addRunningLoanLL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/nominationBtn"
+                                style="@style/TextButtonButton"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="@dimen/dimen_10"
+                                android:backgroundTint="@color/colourTitleBlueBackground"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="Go To Nomination"
+                                android:textColor="@color/colorWhite" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+        <!--button layout-->
+        <LinearLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/closeSettingBtn"
+                style="@style/TextButtonButton"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:backgroundTint="@color/button_background_red"
+                android:text="Close"
+                android:textColor="@color/colorWhite" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveSettingBtn"
+                style="@style/TextButtonButton"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:backgroundTint="@color/colourTitleBlueBackground"
+                android:text="Submit"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+        <!--end button layout-->
+    </RelativeLayout>
+
+</LinearLayout>

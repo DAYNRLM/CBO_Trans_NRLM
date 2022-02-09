@@ -1,0 +1,227 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.MaterialComponents.Light.Bridge">-->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="materialCalendarStyle">@style/Widget.MaterialComponents.MaterialCalendar</item>
+        <item name="materialCalendarFullscreenTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen</item>
+        <item name="materialCalendarTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar</item>
+    </style>
+
+
+    <style name="ProgressBarStyle">
+        <item name="colorAccent">@color/colorProgressBar</item>
+    </style>
+
+    <style name="TextViewCommonTheam" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/text_size_20SP</item>
+        <item name="android:gravity">center</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1</item>
+
+    </style>
+
+    <style name="toolbarTheme" parent="@style/AppTheme">
+        <item name="actionMenuTextColor">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="overlapAnchor">false</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="BlackTextForTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/text_size_18SP</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <!--Dialogs themes-->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+   <!-- ********************material dialog theme*****************-->
+    <style name="MaterialDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="colorPrimary">@color/shrine_pink_100</item>
+        <item name="colorSecondary">@color/shrine_pink_100</item>
+        <item name="colorSurface">@color/blue_text</item>
+        <item name="colorOnSurface">@color/shrine_pink_900</item>
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.App</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.App.Title.Text</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.App.Button</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.App.Button</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App" parent="MaterialAlertDialog.MaterialComponents">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.MediumComponent</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App.Title.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/shrine_pink_900</item>
+    </style>
+
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Button" parent="">
+        <item name="colorPrimary">@color/shrine_pink_900</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+    <!--*************************************************************************-->
+
+
+
+    <style name="TitleTextViewTheme" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/text_size_18SP</item>
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/colourTitleGreenBackground</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <!--spinner custom data-->
+    <style name="CustomSpinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:textColor">@color/colourSpinnerText</item>
+        <item name="android:textSize">@dimen/space10dp</item>
+        <item name="android:longClickable">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/space2dp</item>
+        <item name="android:layout_marginTop">@dimen/space2dp</item>
+        <item name="android:layout_marginLeft">@dimen/space10dp</item>
+        <item name="android:layout_marginRight">@dimen/space10dp</item>
+        <item name="met_floatingLabel">normal</item>
+    </style>
+
+    <style name="ButtonTheam" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:background">@color/colourBtnBlueBackground</item>
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="TextButtonButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/colourBtnBlueBackground</item>
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="IconTextButton" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="android:textColor">@color/colourBtnBlueBackground</item>
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">@color/colourBtnBlueBackground</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="IconTextContainedButton" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">@color/colorWhite</item>
+        <item name="android:backgroundTint">@color/colourBtnBlueBackground</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="OutlineTextButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/colourBtnBlueBackground</item>
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="strokeColor">@color/colourBtnBlueBackground</item>
+    </style>
+
+    <style name="OutlineIconTextButton" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
+        <item name="android:textColor">@color/colourBtnBlueBackground</item>
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">@color/colourBtnBlueBackground</item>
+        <item name="strokeColor">@color/colourBtnBlueBackground</item>
+    </style>
+
+
+    <style name="OutlineEdittextTheam" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/textBlack</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="expandedBarTextStyle" parent="AppTheme">
+        <item name="android:textSize">@dimen/dimen_15</item>
+        <item name="android:textColor">@color/colourBtnBlueBackground</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
+<!--
+
+    <style name="Icontttt" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">@color/colorWhite</item>
+        <item name="android:backgroundTint">@color/colourBtnBlueBackground</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colourBtnBlueBackground</item>
+    </style>
+
+    <style name="ShapeAppearance.MyApp.SmallComponent"
+        parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50dp</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+-->
+
+
+    <!-- Theme.MaterialComponents
+    Theme.MaterialComponents.NoActionBar
+    Theme.MaterialComponents.Light
+    Theme.MaterialComponents.Light.NoActionBar
+    Theme.MaterialComponents.Light.DarkActionBar
+    Theme.MaterialComponents.DayNight
+    Theme.MaterialComponents.DayNight.NoActionBar
+    Theme.MaterialComponents.DayNight.DarkActionBar
+-->
+
+    <!--app:boxBackgroundColor="@color/colourTitleGreenBackground"
+    android:textColorHint="@color/colourBtnBlueBackground"-->
+
+    <!--https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md-->

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space5dp"
+        android:layout_marginBottom="@dimen/space5dp"
+        android:layout_marginLeft="@dimen/space10dp"
+        android:layout_marginRight="@dimen/space10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saving type"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/savingTypeTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Complsry saving"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/amountTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5000 Rs."
+                android:gravity="center_horizontal"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+  <!--  <com.google.android.material.button.MaterialButton
+        android:id="@+id/editsavingBtn"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:text="Edit in Saving"
+        style="@style/OutlineTextButton" />-->
+</LinearLayout>

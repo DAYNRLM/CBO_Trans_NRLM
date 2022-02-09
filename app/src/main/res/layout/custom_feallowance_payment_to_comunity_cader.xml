@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_margin="@dimen/space5dp"
+        style="@style/TitleTextViewTheme"
+        android:text="PAYMENT TO COMMUNITY CADERS"
+        android:id="@+id/title"/>
+
+    <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space3dp"
+        card_view:cardBackgroundColor="@color/colorWhite"
+        card_view:cardElevation="7dp"
+        card_view:strokeColor="@color/colourTitleBlueBackground"
+        card_view:strokeWidth="1.5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="CRP name"
+                android:textColorHint="@color/colourEdittextHint">
+
+                <AutoCompleteTextView
+                    android:id="@+id/CrpNameSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:inputType="none"
+                    android:textColor="@color/color_000"
+                    android:textColorHint="@color/colourTitleBlueBackground"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space10dp"
+                android:layout_marginLeft="@dimen/space5dp"
+                android:layout_marginRight="@dimen/space5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="SHG member code"
+                android:textColorHint="@color/colourEdittextHint">
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/loanNumberTIL"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space10dp"
+                android:layout_marginLeft="@dimen/space5dp"
+                android:layout_marginRight="@dimen/space5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Description"
+                android:textColorHint="@color/colourEdittextHint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="5"
+                    android:textColor="@color/color_000"
+                    android:textColorHint="@color/inner_cardview_border"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space10dp"
+                android:layout_marginLeft="@dimen/space5dp"
+                android:layout_marginRight="@dimen/space5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Amount paid"
+                android:textColorHint="@color/colourEdittextHint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/amount_paidTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:inputType="none"
+                    android:lines="1"
+                    android:maxLength="5"
+                    android:textColor="@color/color_000"
+                    android:textColorHint="@color/inner_cardview_border"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space10dp"
+                android:layout_marginLeft="@dimen/space5dp"
+                android:layout_marginRight="@dimen/space5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Date paid"
+                android:textColorHint="@color/colourEdittextHint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/date_paidTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="5"
+                    android:textColor="@color/color_000"
+                    android:textColorHint="@color/inner_cardview_border"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Transaction mode"
+                android:textColorHint="@color/colourEdittextHint">
+
+                <AutoCompleteTextView
+                    android:id="@+id/transacction_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:inputType="none"
+                    android:textColor="@color/color_000"
+                    android:textColorHint="@color/colourTitleBlueBackground"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

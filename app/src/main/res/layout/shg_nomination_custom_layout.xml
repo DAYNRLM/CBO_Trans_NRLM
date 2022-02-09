@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space3dp"
+        card_view:cardElevation="7dp"
+        card_view:strokeColor="@color/colourTitleBlueBackground"
+        android:padding="3dp"
+        card_view:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shgMemberNameTv"
+                android:layout_margin="@dimen/space3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space3dp"
+                android:text="SHG Member Name"
+                android:textSize="@dimen/text_size_18SP"
+                android:fontFamily="@font/roboto_bold"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/space3dp">
+
+                <TextView
+                    style="@style/TitleTextViewTheme"
+                    android:layout_margin="@dimen/space3dp"
+                    android:background="@color/colourTitleBlueBackground"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/space2dp"
+                    android:text="Nomination Details *"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="13dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/meetingInputLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space5dp"
+                        android:layout_marginRight="@dimen/space5dp"
+                        android:hint="Nomini Name"
+                        android:textColorHint="@color/colourEdittextHint">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/nomineeNameEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:maxLength="5"
+                            android:textColor="@color/color_000"
+                            android:textColorHint="@color/colourTitleBlueBackground"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_weight="0.9"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space5dp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="@string/select_relation"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/relationSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="none"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_weight="1.1"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space5dp"
+                            android:hint="DOB"
+                            android:padding="@dimen/space2dp"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/dimen_5">
+
+                <TextView
+                    style="@style/TitleTextViewTheme"
+                    android:layout_margin="@dimen/space3dp"
+                    android:background="@color/colourTitleBlueBackground"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/space2dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Member Activites"
+                    android:textSize="13dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_marginLeft="@dimen/space5dp"
+                        android:layout_marginRight="@dimen/space5dp"
+                        android:hint="Member Activites"
+                        android:textColorHint="@color/colourEdittextHint">
+
+                        <AutoCompleteTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:inputType="none"
+                            android:textColor="@color/color_000"
+                            android:textColorHint="@color/colourTitleBlueBackground"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space5dp"
+                        android:layout_marginRight="@dimen/space5dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="Member Sub Activites"
+                        android:textColorHint="@color/colourEdittextHint">
+
+                        <AutoCompleteTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:inputType="none"
+                            android:textColor="@color/color_000"
+                            android:textColorHint="@color/colourTitleBlueBackground"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space5dp"
+                        android:layout_marginRight="@dimen/space5dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="Actual Work"
+                        android:textColorHint="@color/colourEdittextHint">
+
+                        <AutoCompleteTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:inputType="none"
+                            android:textColor="@color/color_000"
+                            android:textColorHint="@color/colourTitleBlueBackground"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

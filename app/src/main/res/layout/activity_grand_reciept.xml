@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theam_gradiant"
+    android:fitsSystemWindows="true"
+    tools:context=".view.Activities.GrandRecieptActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_65"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    app:cardCornerRadius="@dimen/dimen_10"
+                    android:elevation="@dimen/dimen_10"
+                    android:translationZ="@dimen/dimen_5"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_5"
+                        android:id="@+id/shg_nameTV"
+                        android:gravity="top"
+                        android:textSize="@dimen/dimen_15"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:text="shg name"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:layout_marginBottom="@dimen/dimen_5"
+                        app:cardCornerRadius="@dimen/dimen_10"
+                        android:elevation="@dimen/dimen_10"
+                        >
+
+                        <TextView
+                            android:layout_width="@dimen/dimen_100"
+                            android:layout_height="match_parent"
+                            android:id="@+id/shg_codeTV"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="@dimen/dimen_15"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:text="12"/>
+
+
+                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    app:cardCornerRadius="@dimen/dimen_10"
+                    android:elevation="@dimen/dimen_10"
+                    android:translationZ="@dimen/dimen_5"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_5"
+                        android:gravity="top"
+                        android:textSize="@dimen/dimen_15"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:text="@string/meeting_date"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:layout_marginBottom="@dimen/dimen_5"
+                        app:cardCornerRadius="@dimen/dimen_10"
+                        android:elevation="@dimen/dimen_10"
+                        >
+
+                        <TextView
+                            android:layout_width="@dimen/dimen_100"
+                            android:layout_height="match_parent"
+                            android:id="@+id/meeting_dateTV"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="@dimen/dimen_15"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:text="12"/>
+
+
+                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    app:cardCornerRadius="@dimen/dimen_10"
+                    android:elevation="@dimen/dimen_10"
+                    android:translationZ="@dimen/dimen_5"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_5"
+                        android:gravity="top"
+                        android:textSize="@dimen/dimen_15"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:text="@string/meeting_number"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:layout_marginBottom="@dimen/dimen_5"
+                        app:cardCornerRadius="@dimen/dimen_10"
+                        android:elevation="@dimen/dimen_10"
+                        >
+
+                        <TextView
+                            android:layout_width="@dimen/dimen_100"
+                            android:layout_height="match_parent"
+                            android:id="@+id/meeting_noTVTV"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="@dimen/dimen_15"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:text="12"/>
+
+
+                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    app:cardCornerRadius="@dimen/dimen_10"
+                    android:elevation="@dimen/dimen_10"
+                    android:translationZ="@dimen/dimen_5"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_5"
+                        android:gravity="top"
+                        android:textSize="@dimen/dimen_15"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:text="@string/cashbook_no"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:layout_marginBottom="@dimen/dimen_5"
+                        app:cardCornerRadius="@dimen/dimen_10"
+                        android:elevation="@dimen/dimen_10"
+                        >
+
+                        <TextView
+                            android:layout_width="@dimen/dimen_100"
+                            android:layout_height="match_parent"
+                            android:id="@+id/cash_book_noTV"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="@dimen/dimen_15"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:text="12"/>
+
+
+                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+
+                    app:cardCornerRadius="@dimen/dimen_10"
+                    android:elevation="@dimen/dimen_10"
+                    android:translationZ="@dimen/dimen_5"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_5"
+                        android:gravity="top"
+                        android:textSize="@dimen/dimen_15"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:text="@string/cashbook_page_no"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:layout_marginBottom="@dimen/dimen_5"
+                        app:cardCornerRadius="@dimen/dimen_10"
+                        android:elevation="@dimen/dimen_10"
+                        >
+
+                        <TextView
+                            android:layout_width="@dimen/dimen_100"
+                            android:layout_height="match_parent"
+                            android:id="@+id/cash_book_page_noTV"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="@dimen/dimen_15"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:text="12"/>
+
+
+                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:id="@+id/toolbar"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:id="@+id/toolbarTV"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:text="@string/title_activity_grand_reciepts"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dimen_20"
+                    />
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <include layout="@layout/grand_reciept_content_scrolling" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

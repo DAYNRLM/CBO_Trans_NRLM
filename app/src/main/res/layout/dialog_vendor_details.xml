@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/dimen_5"
+        android:layout_margin="@dimen/dimen_5"
+        android:elevation="@dimen/dimen_5"
+        android:translationZ="@dimen/dimen_5"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        app:cardCornerRadius="@dimen/dimen_10"
+        android:elevation="@dimen/dimen_10"
+        android:translationZ="@dimen/dimen_10"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/add_vendor_details"
+            android:gravity="center"
+            android:textColor="@color/textBlack"
+            android:textStyle="bold"
+            android:background="@color/colourBtnBlueBackground"
+            android:layout_margin="@dimen/dimen_5"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space5dp"
+        android:hint="@string/vendor_description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vendor_nameTIET"
+            android:maxLines="1"
+            android:maxLength="30"
+            android:digits="@string/digits_caps_letter"
+            android:inputType="textCapCharacters"
+            android:textColor="@color/colourBtnBlueBackground"
+            android:imeOptions="actionNext"
+            android:textSize="@dimen/dimen_17" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space5dp"
+        android:hint="@string/tin_number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vendor_tinNumberTIET"
+            android:maxLines="1"
+            android:maxLength="30"
+            android:inputType="number"
+            android:textColor="@color/colourBtnBlueBackground"
+            android:imeOptions="actionNext"
+            android:textSize="@dimen/dimen_17" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space5dp"
+        android:hint="@string/phone_number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_numberTIET"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:inputType="number"
+            android:textColor="@color/colourBtnBlueBackground"
+            android:imeOptions="actionNext"
+            android:textSize="@dimen/dimen_17" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space5dp"
+        android:hint="@string/address">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressTIET"
+            android:maxLines="1"
+            android:maxLength="50"
+            android:inputType="text"
+            android:textColor="@color/colourBtnBlueBackground"
+            android:imeOptions="actionNext"
+            android:textSize="@dimen/dimen_17" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/savedetailsRL"
+        android:layout_below="@+id/parentLL"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            app:cardCornerRadius="@dimen/dimen_10"
+            android:elevation="@dimen/dimen_10"
+            android:translationZ="@dimen/dimen_10"
+            >
+
+            <TextView
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="match_parent"
+                android:id="@+id/backTV"
+                android:background="@color/colorPrimaryDark"
+                android:textSize="@dimen/dimen_15"
+                android:gravity="center"
+                android:textColor="@color/textBlack"
+                android:textStyle="bold"
+                android:text="@string/cancel"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            app:cardCornerRadius="@dimen/dimen_10"
+            android:elevation="@dimen/dimen_10"
+            android:translationZ="@dimen/dimen_10"
+            >
+
+            <TextView
+                android:id="@+id/saveTV"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:text="@string/save"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/dimen_15"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

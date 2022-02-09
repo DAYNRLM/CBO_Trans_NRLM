@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--basic colour theam-->
+    <color name="colorPrimary">#26c6da</color>
+    <color name="colorPrimaryDark">#0095a8</color>
+    <color name="colorAccent">#6ff9ff</color>
+    <color name="colorBackground">#bdd5ef</color>
+    <color name="colorSplashText">#F0F0F0</color>
+    <color name="colorProgressBar">#FFCE511C</color>
+    <color name="colorTextView">#83898E</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+   <!-- added by lincon-->
+    <color name="colourSpinnerHint">#a4a4a4</color>
+    <color name="colourEdittextHint">#AEACAC</color>
+    <color name="colourSpinnerText">#000000</color>
+    <color name="colourTitleGreenBackground">#ACCC8B</color>
+    <color name="colourTitleBlueBackground">#5898ad</color>
+    <color name="colourBtnBlueBackground">#4fc3f7</color>
+    <color name="colourGreenText">#388e3c</color>
+    <color name="textBlack">#000000</color>
+    <color name="textTitleBlack">#000000</color>
+    <color name="shrine_pink_100">#ede7f6</color>
+    <color name="shrine_pink_900">#d1c4e9</color>
+    <color name="shrine_red">#f44336</color>
+    <color name="light_white">#ffffff</color>
+    <color name="button_light_green">#e1f6e5</color>
+    <color name="button_light_red">#F8D7D7</color>
+    <color name="button_text_green">#73cbc3</color>
+    <color name="button_background_red">#f3564a</color>
+    <color name="gray_background">#eceae5</color>
+    <color name="blue_text">#a5c0e2</color>
+    <color name="color_000">#000</color>
+    <color name="cardViewBorder">#03DA9D</color>
+    <color name="leaderHighlight">#cde5e7</color>
+    <color name="shgCutoffBack">#C0BD51</color>
+    <color name="editTextDense">#E8E6E6</color>
+    <color name="inner_cardview_border">#BDD5F3</color>
+    <color name="edit_btn_background">#C1E1A0</color>
+    <color name="delete_btn_background">#F4948D</color>
+
+
+
+    <!--mint colour -->
+    <color name="mintColorPrimary">#76be2f</color>
+    <color name="mintColorPrimaryDark">#289b23</color>
+    <color name="mintColorAccent">#f9a825</color>
+    <color name="mintPrimaryText">#424242</color>
+    <color name="mintButtonNormal">#76be2f</color>
+    <color name="mintButtonHighlight">#81c784</color>
+    <color name="mintButtonText">#FFFFFF</color>
+
+    <color name="primaryText">#000000</color>
+    <color name="buttonNormal">#e30425</color>
+    <color name="buttonHighlight">#ff554f</color>
+    <color name="buttonText">#FFFFFF</color>
+
+
+
+    <!-- added by manish-->
+
+    <color name="light_green">#e1f6e5</color>
+    <color name="light_red">#ffcccb</color>
+    <!-- added by  abduss-->
+
+   <!-- https://medium.com/omisoft/textinputlayout-styling-8b36a5e0d73c-->
+</resources>

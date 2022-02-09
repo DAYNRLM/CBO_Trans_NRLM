@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/loanFormRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_above="@+id/botemBtnLayout"
+            android:id="@+id/formScrolView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+            <LinearLayout
+                android:id="@+id/addRunningLoanLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space3dp"
+                    card_view:cardBackgroundColor="@color/colorWhite"
+                    card_view:cardElevation="7dp"
+                    card_view:strokeColor="@color/colourTitleBlueBackground"
+                    card_view:strokeWidth="1.5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/loanFromTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_5"
+                            android:layout_marginRight="@dimen/dimen_5"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Loan From"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/loanFromSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="none"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:visibility="gone"
+                            android:id="@+id/loanTypeTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_5"
+                            android:layout_marginRight="@dimen/dimen_5"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Loan Type"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/loanTypeSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="none"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/colourTitleBlueBackground"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/loanFromNameTIL"
+                            android:visibility="gone"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/space10dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Loan from name"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/loanFromNameEt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/inner_cardview_border"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/loanNumberTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/space10dp"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Loan Number"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/loanNumberEt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/inner_cardview_border"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                        <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/bankDetailCardView"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_5"
+                            card_view:cardBackgroundColor="@color/colorWhite"
+                            card_view:cardElevation="8dp"
+                            card_view:strokeColor="@color/colourTitleBlueBackground"
+                            card_view:strokeWidth="1dp">
+                            <LinearLayout
+                                android:id="@+id/bankDetailLL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/bankNameTIL"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dimen_5"
+                                    android:layout_marginRight="@dimen/dimen_5"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="Bank Name"
+                                    android:textColorHint="@color/colourEdittextHint">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/bankNameSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:inputType="none"
+                                        android:textColor="@color/color_000"
+                                        android:textColorHint="@color/colourTitleBlueBackground"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="false"
+                                        android:textSize="15dp" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/branchNameTIL"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dimen_5"
+                                    android:layout_marginRight="@dimen/dimen_5"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="Branch Name"
+                                    android:textColorHint="@color/colourEdittextHint">
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/branchNameSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:inputType="none"
+                                        android:textColor="@color/color_000"
+                                        android:textColorHint="@color/colourTitleBlueBackground"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="false"
+                                        android:textSize="15dp" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/ifscCodeTIL"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/space5dp"
+                                    android:layout_marginRight="@dimen/space5dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:hint="IFSC code"
+                                    android:layout_marginBottom="@dimen/space10dp"
+                                    android:textColorHint="@color/colourEdittextHint">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/ifscCodeEt"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:lines="1"
+                                        android:textColor="@color/color_000"
+                                        android:textColorHint="@color/colourTitleBlueBackground"
+                                        android:background="@color/editTextDense"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="false"
+                                        android:clickable="false"
+                                        android:textSize="15dp" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                            </LinearLayout>
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space3dp"
+                    card_view:cardBackgroundColor="@color/colorWhite"
+                    card_view:cardElevation="7dp"
+                    card_view:strokeColor="@color/colourTitleBlueBackground"
+                    card_view:strokeWidth="1.5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/loanSencationDateTIL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Loan Sanction Date"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/loanSencationDateEt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:lines="1"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/inner_cardview_border"
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/loanSancationAmountTIL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Loan Sanction Amount"
+                                app:startIconDrawable="@drawable/rupee_indian"
+                                app:startIconTint="@color/colorPrimaryDark"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/loanSancationAmountEt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="number"
+                                    android:lines="1"
+                                    android:maxLength="5"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/inner_cardview_border"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_marginBottom="@dimen/space8dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:id="@+id/loanDisbDateTTL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Loan Disburses Date "
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <com.google.android.material.textfield.TextInputEditText
+
+                                    android:id="@+id/loanDisbDateET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:lines="1"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/inner_cardview_border"
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:id="@+id/loanDisbAmountTTL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Loan Disburses Amount"
+                                app:startIconDrawable="@drawable/rupee_indian"
+                                app:startIconTint="@color/colorPrimaryDark"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <com.google.android.material.textfield.TextInputEditText
+
+                                    android:id="@+id/loanDisbAmountET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="number"
+                                    android:lines="1"
+                                    android:maxLength="5"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/inner_cardview_border"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space3dp"
+                    card_view:cardBackgroundColor="@color/colorWhite"
+                    card_view:cardElevation="7dp"
+                    card_view:strokeColor="@color/colourTitleBlueBackground"
+                    card_view:strokeWidth="1.5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+                            android:id="@+id/rateOfIntresrTTL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Rate of Interest (Yearly in %)"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/rateOfIntresrEt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/inner_cardview_border"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:id="@+id/noOfInsalTTL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="No. of Installments"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <com.google.android.material.textfield.TextInputEditText
+
+                                    android:id="@+id/noOfInstalmentET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="number"
+                                    android:lines="1"
+                                    android:maxLength="5"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/inner_cardview_border"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:id="@+id/instalmentAmpuntTTL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Installment Amount"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <com.google.android.material.textfield.TextInputEditText
+
+                                    android:id="@+id/instalmentAmpuntET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="number"
+                                    android:lines="1"
+                                    android:maxLength="5"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/inner_cardview_border"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:id="@+id/installmentRepPaidTTL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="No. Installment Re-Paid"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <com.google.android.material.textfield.TextInputEditText
+
+                                    android:id="@+id/installmentRepPaidET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="number"
+                                    android:lines="1"
+                                    android:maxLength="5"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/inner_cardview_border"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:id="@+id/principalPaidTTL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="PrincipalPaid"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <com.google.android.material.textfield.TextInputEditText
+
+                                    android:id="@+id/principalPaidtET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="number"
+                                    android:lines="1"
+                                    android:maxLength="5"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/inner_cardview_border"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/principalOverdueTTL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Principal Overdue"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <com.google.android.material.textfield.TextInputEditText
+
+                                    android:id="@+id/principalOverdueET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="number"
+                                    android:lines="1"
+                                    android:maxLength="5"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/inner_cardview_border"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:id="@+id/intrestOverdueTTL"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space5dp"
+                                android:layout_marginRight="@dimen/space5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_regular"
+                                android:hint="Intrest Overdue"
+                                android:textColorHint="@color/colourEdittextHint">
+
+                                <com.google.android.material.textfield.TextInputEditText
+
+                                    android:id="@+id/intrestOverdueET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="number"
+                                    android:lines="1"
+                                    android:maxLength="5"
+                                    android:textColor="@color/color_000"
+                                    android:textColorHint="@color/inner_cardview_border"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+                            android:id="@+id/intrestPaidTTL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space5dp"
+                            android:layout_marginRight="@dimen/space5dp"
+                            android:layout_marginBottom="@dimen/space8dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Intrest Paid"
+                            android:textColorHint="@color/colourEdittextHint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+
+                                android:id="@+id/intrestPaidET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:textColor="@color/color_000"
+                                android:textColorHint="@color/inner_cardview_border"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!--btn layout-->
+        <LinearLayout
+            android:id="@+id/botemBtnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/runningLoanCloseBtn"
+                style="@style/TextButtonButton"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:backgroundTint="@color/button_background_red"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Close"
+                android:textColor="@color/colorWhite" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/runningLoanSubmitBtn"
+                style="@style/TextButtonButton"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:backgroundTint="@color/colourTitleBlueBackground"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Add loan"
+                android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/recyclerRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_above="@+id/BtnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/recyclerviewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space3dp"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardElevation="7dp"
+                card_view:strokeColor="@color/colourTitleBlueBackground"
+                card_view:strokeWidth="1.5dp">
+
+                <LinearLayout
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/runningLoanRV"
+                        android:padding="@dimen/dimen_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/BtnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addMoreBtn"
+                style="@style/TextButtonButton"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:backgroundTint="@color/colourTitleBlueBackground"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Add more Loans"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
